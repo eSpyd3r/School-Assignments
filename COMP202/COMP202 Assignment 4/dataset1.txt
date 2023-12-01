@@ -1,0 +1,37 @@
+Contact Records:
+	Alice (260018288) had contact with Bob (260808934), Carol (260996175), Darryl (260084903), Ettienne (260026473), Forbert (260072990), Gordie (260039118)
+	Hanes (260041845) had contact with Bob (260808934), Carol (260996175), Ettienne (260026473), Forbert (260072990)
+	Illersley (260092533) had contact with Darryl (260084903), Ettienne (260026473), Forbert (260072990), Job (260013314), Kirk (260041812), Gordie (260039118)
+	Job (260013314) had contact with Lammle (260065208)
+	Forbert (260072990) had contact with Molly (260061737), Job (260013314)
+	Kirk (260041812) had contact with Job (260013314)
+	Darryl (260084903) had contact with Lammle (260065208)
+	Bob (260808934) had contact with Lammle (260065208)
+	Ettienne (260026473) had contact with Lammle (260065208)
+	Carol (260996175) had contact with Lammle (260065208)
+	Molly (260061737) had contact with Job (260013314), Kirk (260041812)
+	Gordie (260039118) had contact with Kirk (260041812)
+
+Patient Zero(s): Alice (260018288), Hanes (260041845), Illersley (260092533)
+Potential sick students: Lammle (260065208)
+Sick students who got infected from another student: Job (260013314), Bob (260808934), Forbert (260072990), Ettienne (260026473), Carol (260996175), Kirk (260041812), Darryl (260084903), Gordie (260039118), Molly (260061737)
+Most viral students: Alice (260018288), Illersley (260092533)
+Most contacted students: Lammle (260065208)
+Ultra spreaders: Job (260013314), Darryl (260084903), Bob (260808934), Ettienne (260026473), Carol (260996175)
+Non-spreaders: Alice (260018288), Hanes (260041845), Illersley (260092533), Forbert (260072990), Kirk (260041812), Molly (260061737), Gordie (260039118)
+
+For bonus:
+Minimum distances of students from patient zeros: 
+	Alice (260018288): 0,
+	Bob (260808934): 1,
+	Carol (260996175): 1,
+	Darryl (260084903): 1,
+	Ettienne (260026473): 1,
+	Forbert (260072990): 1,
+	Gordie (260039118): 1,
+	Hanes (260041845): 0,
+	Illersley (260092533): 0,
+	Job (260013314): 1,
+	Kirk (260041812): 1,
+	Lammle (260065208): 2,
+	Molly (260061737): 2

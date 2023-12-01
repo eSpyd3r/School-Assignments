@@ -1,0 +1,2 @@
+- Everything works fine to my knowledge. However, in contactTracingSystem.py, lines 142 to 218 are very similar/repetitive. I attempted to create a helper function to make this more efficient. The function I created ended up being much longer than I thought, so I felt that the repeated code was better... wasn't sure what the best thing to do was tbh.
+- Did not work with anyone

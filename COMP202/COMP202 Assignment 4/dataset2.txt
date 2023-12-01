@@ -1,0 +1,49 @@
+Contact Records:
+	Hadley (260064375) had contact with Ayla (260005925), Francesca (260032440)
+	Jasmine (260094997) had contact with Avah (260072488), Zara (260026754), Reed (260010997), Maddison (260031971)
+	Brittany (260092902) had contact with Reed (260010997), Anahi (260068501), Ayla (260005925), Hadley (260064375)
+	Maddison (260031971) had contact with Rory (260092283), Brittany (260092902), Reed (260010997), Ayla (260005925)
+	Reed (260010997) had contact with Ayla (260005925), Leonardo (260031356)
+	Danna (260068680) had contact with Weston (260094691), Rory (260092283), Ayla (260005925)
+	Naima (260071927) had contact with Danna (260068680), Weston (260094691), Jackson (260014616)
+	Jackson (260014616) had contact with Hadley (260064375), Zara (260026754), Brittany (260092902), Reed (260010997), Rory (260092283)
+	Weston (260094691) had contact with Ayla (260005925), Brittany (260092902)
+	Zara (260026754) had contact with Hadley (260064375), Reed (260010997), Ayla (260005925), Brittany (260092902), Anahi (260068501)
+	Avah (260072488) had contact with Hadley (260064375)
+	Rory (260092283) had contact with Hadley (260064375), Anahi (260068501), Reed (260010997), Brittany (260092902), Ayla (260005925)
+	Hailee (260012075) had contact with Angelina (260095234)
+	Sanaa (260025405) had contact with Jasmine (260094997)
+	Piper (260055764) had contact with Maddison (260031971)
+	Anahi (260068501) had contact with Ayla (260005925)
+	Angelina (260095234) had contact with Brittany (260092902)
+
+Patient Zero(s): Naima (260071927), Hailee (260012075), Sanaa (260025405), Piper (260055764)
+Potential sick students: Leonardo (260031356), Ayla (260005925), Francesca (260032440)
+Sick students who got infected from another student: Reed (260010997), Jasmine (260094997), Angelina (260095234), Zara (260026754), Hadley (260064375), Brittany (260092902), Avah (260072488), Maddison (260031971), Weston (260094691), Danna (260068680), Rory (260092283), Anahi (260068501), Jackson (260014616)
+Most viral students: Jackson (260014616), Zara (260026754), Rory (260092283)
+Most contacted students: Ayla (260005925)
+Ultra spreaders: Hadley (260064375), Reed (260010997), Anahi (260068501)
+Non-spreaders: Jasmine (260094997), Naima (260071927), Jackson (260014616), Avah (260072488), Hailee (260012075), Sanaa (260025405), Piper (260055764), Angelina (260095234)
+
+For bonus:
+Minimum distances of students from patient zeros: 
+	Angelina (260095234): 1,
+	Francesca (260032440): 3,
+	Rory (260092283): 2,
+	Piper (260055764): 0,
+	Sanaa (260025405): 0,
+	Danna (260068680): 1,
+	Ayla (260005925): 2,
+	Leonardo (260031356): 3,
+	Reed (260010997): 2,
+	Jackson (260014616): 1,
+	Zara (260026754): 2,
+	Avah (260072488): 2,
+	Anahi (260068501): 3,
+	Hailee (260012075): 0,
+	Naima (260071927): 0,
+	Weston (260094691): 1,
+	Maddison (260031971): 1,
+	Brittany (260092902): 2,
+	Jasmine (260094997): 1,
+	Hadley (260064375): 2

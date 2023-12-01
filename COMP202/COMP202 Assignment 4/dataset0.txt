@@ -1,0 +1,32 @@
+Contact Records:
+ 	Bob (260808934) had contact with Paul (260840155), Mark (260248711), Carol (260996175), Leanne (260476020), Will (260561504)
+ 	Carol (260996175) had contact with Mark (260248711), Leanne (260476020)
+ 	Farley (260675874) had contact with Paul (260840155)
+ 	Leanne (260476020) had contact with Sarai (260758421)
+ 	Larry (260386543) had contact with Carol (260996175), Mark (260248711), Leanne (260476020), Will (260561504)
+ 	Mark (260248711) had contact with Philip (260212160), Zach (260970944)
+ 	Paul (260840155) had contact with Zach (260970944)
+ 	Will (260561504) had contact with Leanne (260476020), Mark (260248711)
+ 	Zach (260970944) had contact with Philip (260212160)
+
+Patient Zero(s): Bob (260808934), Farley (260675874),  Larry (260386543)
+Potential sick students: Philip (260212160), Sarai (260758421)
+Sick students who got infected from another student: Carol (260996175), Leanne (260476020), Mark (260248711), Paul (260840155), Will (260561504), Zach (260970944)
+Most viral students: Bob (260808934)
+Most contacted students: Leanne (260476020), Mark (260248711)
+Ultra spreaders: Leanne (260476020), Zach (260970944)
+Non-spreaders: Bob (260808934), Carol (260996175), Farley (260675874),  Larry (260386543), Paul (260840155), Will (260561504)
+
+For bonus:
+Minimum distances of students from patient zeros:
+	Bob (260808934): 0, 
+	Paul (260840155): 1, 
+	Mark (260248711): 1, 
+	Carol (260996175): 1, 
+	Leanne (260476020): 1, 
+	Will (260561504): 1, 
+	Farley (260675874): 0, 
+	Sarai (260758421): 2, 
+	Larry (260386543): 0, 
+	Philip (260212160): 2, 
+	Zach (260970944): 2

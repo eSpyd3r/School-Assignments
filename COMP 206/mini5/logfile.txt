@@ -1,0 +1,227 @@
+commit 8b2fc69793924c615654b7330cdeee1c6c18c68d
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 13:50:37 2023 -0400
+
+    Removed usage of helper printing function in list()
+
+commit 286be5c3e9cd3302f9d80bf3e0c196b8c4db0098
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 13:50:06 2023 -0400
+
+    Removed Helper Printing Function from .h file
+
+commit deaa618d4aa5e8e92ee4b906301e96fbbe6a1c27
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 13:48:04 2023 -0400
+
+    Removed printing helper functions since not allowed
+
+commit 1d69b09823b7eba57809f337a3de7ea818c91ffd
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 13:47:19 2023 -0400
+
+    Removed Printing Helper Functions since not allowed
+
+commit c3c398ba39792da75e2c70f663fce3746249d8db
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 02:10:32 2023 -0400
+
+    Added comments to phone file
+
+commit 9225652eb50ba10f67b94fca843c7cc56a7d110b
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 01:56:01 2023 -0400
+
+    Updated makefile to compile helper files
+
+commit c55f54d5716b3fa3afdd19c859f634db6e7f1ebf
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 01:54:01 2023 -0400
+
+    Removed Helper Functions from phone file
+
+commit de0bec24122ba590462cca7245693bc884b6302f
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 01:50:51 2023 -0400
+
+    Added #include mini5helper.h in phone file
+
+commit 8dadd7037dbfdfdd3a07bfb03a0f645c3419bd37
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 01:49:54 2023 -0400
+
+    File to compile helper as an object
+
+commit 99890778879e39cee85d59e8bedd10bb891ae821
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Fri Apr 14 01:48:40 2023 -0400
+
+    Added helper file for helper functions
+
+commit 82351ec298764bdf46c0b46d8cf399ab2a5fd2c4
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Thu Apr 13 23:51:57 2023 -0400
+
+    Used fgets+sscanf to get input to fix bug, cleared input buffer when entering wrong selection
+
+commit bba1daf6125137143bc74254fdaead6d82f2b0cb
+Author: Ethan Lim <elim12@teach-node-02.CS.McGill.CA>
+Date:   Thu Apr 13 23:15:02 2023 -0400
+
+    resolved issue regardling larger phone lengths
+
+commit c12271719f774fde7c11708bcf7c8d168005cca1
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Thu Apr 13 21:44:58 2023 -0400
+
+    Changed function names in mini5phone.c and removed printHeading() function
+
+commit 1515dc25cfc43c2defa6fe471e8d03a378e8f8fd
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Thu Apr 13 21:31:42 2023 -0400
+
+    Added Tester
+
+commit 3783e52e1885d513107fd3e9cc39ebea1e84d6c7
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Thu Apr 13 21:11:35 2023 -0400
+
+    Changed Function names to correct ones
+
+commit 4c4a1f16a09e3965bbe3e0125f60b03d03093319
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Thu Apr 13 21:10:33 2023 -0400
+
+    Changed Function Names to Correct Names (According to PDF Assignment)
+
+commit 9107b50d9c68995afebeebfb9f7898446e373595
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Thu Apr 13 21:04:48 2023 -0400
+
+    Made menu void, moved KB input to main()
+
+commit 14f00c05c36a6dbbb7f6f53e712df47be74b530f
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Thu Apr 13 15:09:18 2023 -0400
+
+    debugged and fixed delete & clear case for main()
+
+commit 60ba9b009f7c86d61d4043db7f493938066a16f6
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 21:33:33 2023 -0400
+
+    IPACS styling
+
+commit da148e1c2a867582a5c27749bb7c105b119e5d36
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 18:40:17 2023 -0400
+
+    Removed include mini5phone.c, since we are using header file.
+
+commit 0c55947286dfc16d791609a0ea4d4d6b8d481f66
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 18:30:14 2023 -0400
+
+    Finished Clear part of Delete/Clear, so it prompts user
+
+commit 636d703960afef92b76c4edee04647bb09616672
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Wed Apr 12 11:25:30 2023 -0400
+
+    added clearRecords to main()
+
+commit ffa1cb84556219af4160e92059f7d01e8149356a
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 11:20:49 2023 -0400
+
+    Implemented clearRecords Method
+
+commit 84a009772000badd53374982d328235be18e431e
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Wed Apr 12 10:58:28 2023 -0400
+
+    finished makefile
+
+commit c7d91c5362b673d9a7b926df7d12545a9af28e47
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Wed Apr 12 10:57:50 2023 -0400
+
+    added clear, delete & else options to case 2
+
+commit 5a22e4d989b2e50ebc55ba1cfdb0c4412b987306
+Author: Ethan Lim <elim12@teach-node-02.CS.McGill.CA>
+Date:   Wed Apr 12 06:12:32 2023 -0400
+
+    added comments for clarity; fixed some styling issues
+
+commit 502de6bd882ec69eb819326ae4a6cc3c368808bc
+Author: Ethan Lim <elim12@teach-node-02.CS.McGill.CA>
+Date:   Wed Apr 12 06:07:42 2023 -0400
+
+    fixed typos; syntax errors
+
+commit a2b93573b6154e5f65a0dbd66bb5d76c764ce403
+Author: Ethan Lim <elim12@teach-node-02.CS.McGill.CA>
+Date:   Wed Apr 12 06:01:41 2023 -0400
+
+    implemented deleteRecords(); still need to test/comment
+
+commit 11bc53275c269adeba5e90d569eddcb346482d40
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 05:08:11 2023 -0400
+
+    Fixed menu(was void), implemented delete part of Delete or Clear
+
+commit c4c910b818b954981f311acceab2eec108d6a840
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 04:36:40 2023 -0400
+
+    Removed Global Variables except head (allowed).Changed methods to now use linked list pointers.
+
+commit 3bec9c246422c4a3e453214558ecf40a6f7c8fa2
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Wed Apr 12 04:24:40 2023 -0400
+
+    Header file containing NODE struct and functions
+
+commit ed4cba43c1e7f1bb01aa22ccca127e8826875975
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Tue Apr 11 18:49:10 2023 -0400
+
+    finished up main() still need to debug code with respect to other files
+
+commit 782fadfcd8fb5c6208ee44decb8d508668eb5e83
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Tue Apr 11 18:33:15 2023 -0400
+
+    finished menu(), added a cases 1 & 2 for main()
+
+commit 6213b2da54d8e0367b4b010e7c8e41d0234f558b
+Author: Katie Laplante <katielaplante@mcgill.ca>
+Date:   Tue Apr 11 17:54:01 2023 -0400
+
+    copied and renamed mini5main.c, mostly just testing out git
+
+commit dec9cc806bb0652666643a899a6b7f304ddf19e2
+Author: Ethan Lim <elim12@teach-node-02.CS.McGill.CA>
+Date:   Tue Apr 11 10:00:42 2023 -0400
+
+    added clear() method; just like deleteRecord(), waiting for implementation of removing node to finish. note that mini4phone.c has been renamed to mini5phone.c
+
+commit a74a2c86ba643eac139baa3f556c0c58987245de
+Author: Ethan Lim <elim12@teach-node-02.CS.McGill.CA>
+Date:   Tue Apr 11 09:46:28 2023 -0400
+
+    changed PHONE_RECORDS to PHONE_NODE as per pdf; defined deleteRecord() method but need to implement delete node method from helper
+
+commit c1735b3250c10cf0e1b57fcc9dc1b8cd0cee918c
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Mon Apr 10 14:16:05 2023 -0400
+
+    Add/Commit Test (IGNORE)
+
+commit 05e157671b166af86e63a78611ed8dfafbbea54d
+Author: Martin Eskaros <meskar@teach-node-01.cs.mcgill.ca>
+Date:   Mon Apr 10 13:26:39 2023 -0400
+
+    Added Starter Code

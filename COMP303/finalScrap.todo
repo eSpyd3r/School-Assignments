@@ -1,0 +1,78 @@
+Chapter 3 - Types and Interfaces:
+ ☐ Comparable:
+   ☐ We IMPLEMENT comparable into a class and define: 'public int compareTo(objToCompare)' in order to define how an object of the class is to be compared
+ ☐ Comparator:
+   ☐ Many ways of using comparator. Conisder using Collections.sort on some list (listOfRetards):
+   ☐ We can implement comparator to define function objects:
+     public class someComparator implements Comparator<Retard> {
+         public int compare(Retard pRetard1, Retard pRetard2) {
+         //comparison code
+         }
+     }
+     ☐ Then, we can pass an instance of this comparison method into Collections.sort -> Collections.sort(listOfRetards, new someComparator())
+   ☐ Alternatively, can pass an anonymous class:
+     Collections.sort(listOfRetards, new Comparator<Retard> {
+       @Override
+       public int compare(Retard pRetard1, Retard pRetard2) {...}
+     });
+     ☐ Anonymous class = declaring and instantiating a new class at the same time
+ ☐ Iterators:
+   ☐ Iterable<T> is an interface with method iterator(), which returns an Iterator<T>, which represents the "traverser/pointer" of what we want to traverse. <T> is the type of object we are traversing in the collection
+   public class Deck implements Iterable<Card> {
+     private List<Card> aCards;
+
+     public Iterator<Card> iterator() {
+       return aCards.iterator();
+     }
+   }
+     ☐ Now, objects of class Deck can be used in an enhanced for loop:
+      for(Card card: deck) {...}
+
+
+ ☐ Dependency Injection:
+   public class Deck {
+     private Comparator<Card> aComparator;
+
+     public Deck(Comparator<Card> pComparator) {
+       aComparator = pComparator);
+     }
+   }
+   ☐ Dependency of defining aComparator is injected into constructor (client decided what to put in aComparator)
+
+ ☐ Interface Segregation Principle: "a class should not be forced to implement interfaces it doesn't use"
+   ☐ To ensure following this principle, create as many individual interfaces as possible in order to maximize separating function
+
+
+
+
+
+
+Design Patterns:
+  ☐ ITERATOR
+    ☐ Context: Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation
+    ☐ This design pattern is essentailly just implementing the use of Iterable and Iterator
+      ☐ Abstract Aggregate and Concrete Aggregate (Concrete Aggregate Examples: ArrayList, HashSet...)
+      ☐ Abstract Iterator and Concrete Iterator (Concrete Iterator: ArrayList.iterator(), HashSet.iterator(), ...)
+  
+  ☐ STRATEGY
+    ☐ Context: Define a family of algorithms, encapsulate each one, and make them interchangeable; lets the algorithms vary independently from clients that use it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

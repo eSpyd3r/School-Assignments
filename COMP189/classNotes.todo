@@ -1,0 +1,19 @@
+Lecture 1:
+    ☐ Internet exists as a network -> overcrowding = using bandwidth = slower
+
+Lecture 2 - How data moves:
+    ☐ Webpage sent in components, each with components that are broken into a set of packets
+    ☐ Missing packets -> reciever waits; waiting = Timeout period
+      ☐ Will eventually fully Timeout, quitting/stopping the wait -> data/packets that are needed aren't coming through after a certain amount of time; the collected packets are thrown out and an error is thrown
+      ☐ Sends request for missing packet
+    ☐ TCP Routing -> typical protocol for routing, guarenteeing that the requeted data is transferred
+      ☐ Used for transferring of data that need to be delivered 'perfectly' (loading a website/image, since the entire website/image is needed)
+    ☐ Sometimes it's 'okay' for data to be loss
+      ☐ video games -> crashing a game over a single loss packet wouldn't make sense
+      ☐ youtube/playback -> typically located as buffer anyways (in the future), and so if any packets are lost there's time to recieve it
+    ☐ UDP Routing -> Not guarenteed, real-time
+      ☐ Only concerned about the latest packet in the stream. If an older packet is recieved, it's thrown out
+      ☐ This is when it's 'okay' to have packet loss (note that in scenarios like video games, some assets are considered optional (delivered with DCP) while others are considered required (TCP))
+
+Lecutre 3 - How do we "chop-up" packets:
+  ☐ Binary/Decimal representation

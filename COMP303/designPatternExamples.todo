@@ -41,3 +41,147 @@ sorter.sortData(data);
 
 sorter.setStrategy(new BubbleSort()); // Changing strategy to BubbleSort
 sorter.sortData(data);
+
+
+NULL OBJECT:
+
+  public interface CardSource() {
+
+  CardSource NULL = new CardSource() {
+
+    public Card draw() {
+      assert !isEmpty();
+      return null;
+    }
+
+    public boolean isEmpty() {
+      return true;
+    }
+
+    public boolean isNull() {return true;}
+
+  }
+
+  Card draw();
+  boolean isEmpty()
+  default boolean isNull() {return false;}
+  }
+
+
+FLYWEIGHT - Lazy:
+  public class Card {
+
+    private static Card[][] CARDS = new Card[suit.values.length()][rank.values.length()];
+
+
+    public static Card get(Rank pRank, Suit pSuit) {
+      if (CARDS[pRank.ordinal()][pSuit.ordinal()] == null)
+        {CARDS[pRank.ordinal()][pSuit.ordinal()] = new Card(pRank, pSuit);}
+
+      return CARDS[pRank.ordinal()][pSuit.ordinal()];
+
+    }
+  }
+
+FLYWEIGHT - NonLazy:
+  public class Card {
+
+    private static Card[][] CARDS = new Card[Suit.values().length][Rank.values().length];
+
+    static {
+      for(Suit suit: Suit.values()) {
+        for(Rank rank: Rank.values()) {
+          CARDS[suit.ordinal()][rank.ordinal()] = new Card(rank, suit);
+        }
+      }
+    }
+
+    public static Card get(Rank pRank, Suit pSuit) {
+
+      assert pRank != null && pSuit != null
+      return CARDS[pSuit.ordinal()][pRank.ordinal()];
+
+    }
+  }
+
+FLYWEIGHT - with Factory class:
+   public class Card {
+     private final Rank aRank;
+     private final Suit aSuit;
+
+     private Card(Rank pRank, Suit pSuit) {...}
+
+     public class CardFactory {  
+       private Card[][] CARDS = new Card[Suit.values().length][Rank.values().length];
+
+       public Card get(Rank pRank, Suit pSuit) {
+         if (CARDS[pSuit.ordinal()][pRank.ordinal()] == null) {
+           CARDS[pSuit.ordinal()][pRank.ordinal()] = new Card(pRank, pSuit);
+         }
+
+         return CARDS[pSuit.ordinal()][pRank.ordinal()];
+       }
+
+     }
+
+   }
+
+SINLETON:
+  public class GameModel {
+    private static final GameModel INSTANCE = new GameModel();
+
+    private GameModel() {...}
+
+    public static GameModel instance() {return INSTANCE;}
+  }
+
+COMPOSITION:
+
+
+DECORATOR:
+
+
+PROTOTYPE:
+  public class GameModel {
+    private final CardSource aCardSourcePrototype;
+    private CardSource aCardSource;
+
+    public GameModel(CardSource pCardSourcePrototype) {
+      aCardSourcePrototype = pCardSourcePrototype;
+      newGame();
+    }
+
+    public void newGame() {
+      aCardSource = aCardSourceProtoype.copy();
+    }
+  }
+
+COMMAND:
+   public class Deck {
+     private CardStack aCards = new CardStack();
+
+     public Command createDrawCommand() {
+       return new Command() {
+         Card aDrawn = null;
+
+         public Optional<Card> execute() {
+           aDrawn = draw;
+           return Optional.of(aDrawn)
+         }
+
+         public void undo() {
+           aCards.push(aDrawn);
+           aDrawn = null;
+         }
+       }
+     }
+   }
+
+
+
+
+
+
+
+
+

@@ -11,7 +11,7 @@ Chapter 3 - Types and Interfaces:
      }
      ☐ Then, we can pass an instance of this comparison method into Collections.sort -> Collections.sort(listOfRetards, new someComparator())
    ☐ Alternatively, can pass an anonymous class:
-     Collections.sort(listOfRetards, new Comparator<Retard> {
+     Collections.sort(listOfRetards, new Comparator<Retard>() {
        @Override
        public int compare(Retard pRetard1, Retard pRetard2) {...}
      });
@@ -43,8 +43,281 @@ Chapter 3 - Types and Interfaces:
    ☐ To ensure following this principle, create as many individual interfaces as possible in order to maximize separating function
 
 
+Chapter 4 - Object State:
+  ☐ Static vs Dynamic States; Concrete vs Abstract States
+  ☐ State Diagrams -> We refer to the Abstract States of objects
+  ☐ Nullability/modeling 'nothing': Optional<T>
+    ☐ Optional<T>.empty() gives a value of just 'nothing'
+    ☐ Optional<T>.of(value) represents the value of an Optional variable holding value 'value'. Ex: Optional<Suit> someSuit = Optional<Suit>.of(Suit.SPADES)
+    ☐ Optional<T>.isPresent() is some optional that is anything but empty
+    ☐ Optional<T>.get() retrieves value of Optional
+      ☐ Note: calling get() on an empty Optional will throw NoSuchElementException
+  ☐ Defining Final Fields and Variables -> Fields and Variables whose states can't change
+    ☐ This does NOT declare immutability
+  ☐ Override equals to esatablish equality:
+
+    @Override
+    public boolean equals(Object pObject)
+    {
+      if (pObject == null) {return false;}
+      else if (pObject == this) {return true;}
+      else if (pObject.getClass() != getClass()) {return false;}
+      else
+        { //Actual Comparison
+          return ((Card)pObject.getRank == aRank && (Card)pObject.getSuit == aSuit));
+
+        }
+
+    }
+    ☐ Defines what makes cards "equal"; cards are equal if and only if both suit and rank match.
+    ☐ Everytime equals() is overriden, hashCode() must also be overriden
+ ☐ FLYWEIGHT Design Pattern
+ ☐ SINGLETON Design Pattern
+ ☐ FLYWEIGHT vs SINGLETON:
+   ☐ FLYWEIGHT = UNIQUE instances
+   ☐ SINGLETON = SINGLE instance
+
+ ☐ Objects of nested classes:
+   ☐ Inner Classes = Classes defined within another class
+     ☐ Calling method of outer class = outerClassName.this.method()
+   ☐ Anonymous classes
+     ☐ References to local variables are stored as fields of the same name inside of the anonymous class
 
 
+Chapter 5 - Unit Testing:
+  ☐ assertEquals(method1(), method2()) -> testing for equality
+    @Test
+    public void testAbs_Negative() {
+      assertEquals(5, math.abs(-5));
+    }
+
+    @Test 
+    public void testAbs_Max() {
+      assertEquals(Integer.MAX_VALUE, Math.abs(Integer.MIN_VALUE));
+    }
+ ☐ assertTrue(booleanExpression) -> tests if booleanExpression evaluates to True
+ ☐ assertFalse(booleanExpression) -> tests if booleanExpression evaluates to False
+ ☐ Metaprogramming - Introspection
+   ☐ Refer to a class of a particular name:
+     ☐ Class<?> cls = Class.forName("Card") -> cls now refers to the whole class, and we can call other methods on cls such as:
+       ☐ Method mehtod = cls.getDeclaredMethod("Card") -> returns a reference to a specific method in cls
+       ☐ Object obj = cls.getDeclaredConstructor(Rank.class, Suit.class).newInstance(Rank.ACE, Suit.CLUBS)
+         ☐ getDeclaredConstructor returns an object of type Constructor, and this constructor can be used to create a new instance with newInstance(//params)
+       ☐ <Class>.getDeclaredField("fieldName") returns and object of type Field
+       ☐ <Field>.set() sets the value of a field
+     ☐ setAccessible(true) can provide access to a constructor, method, or field that is declared private
+     ☐ someClass.class.getDeclaredMethods() -> return list of all methods in a class
+     ☐ someMethod.getParameterCount() -> return number of parameters for that method
+ ☐ Testing for Exception throwing:
+     assertThrows(exceptionName.class, new Executable() {
+       public void execute() throws Throwable {
+         //method that is expected throw exception exceptionName
+       }
+   })
+   ☐ Alternatively, using a lambda expression:
+     assertThrows(exceptionName.class, () -> //method call);
+ ☐ When dealing with reference types, need to consider using assertSame and not just assertEquals
+
+Chapter 6 - Composition:
+  ☐ COMPOSITE Design Pattern
+  ☐ Sequence Diagramas
+  ☐ DECORATOR Design Pattern
+  ☐ COMPOSITE and DECORATOR can be used together in combination (Composite as one leaf of interface, Decorator objects as others)
+  ☐ PROTOTYPE
+  ☐ COMMAND
+
+Chapter 7 - Inheritance:
+  ☐ What is inherited to a subclass:
+    ☐ all public methods and fields
+    ☐ private fields are "part" of the subclass but aren't accessible
+    ☐ Remember that in the constructor of the subclass to call super(...) ('...' being the parameters of the super constructor)
+  ☐ The runtime type of an object is the actual class that was instantiated: the class name that follows the 'new' keyword
+    Deck deck = new MemorizingDeck();
+    Card card = deck.draw();
+    ☐ MemorizingDeck extends Deck
+    ☐ MemorizingDeck#draw() is selected
+    --------
+    public class MemorizingDeck extends Deck {
+      public Card draw() {
+        Card card = super.draw();
+        aDrawCards.push(card);
+        return card;
+      }
+    }
+
+    ☐ super.draw() refers to Deck#draw()
+ ☐ Page 171 -> clarifying classes 
+ ☐ Polymorphic copying -> in the presence of some form of copying, ensure to Override the copying in the subclasses; don't rely on the superclass implementation for the copying mechanism. this can lead to error (returning an object of the superclass rather than the subclass)
+ ☐ Another solution: Cloning
+   ☐ Extend Clonable, override clone()
+     public Deck clone() {
+       Deck clone = (Deck) super.clone();
+       clone.aCards = new CardStack(aCards);
+       return clone;
+     }
+ ☐ A solution typically exists in which either composition OR inheritance can be used. This is context dependent
+   ☐ Composition -> run-time flexibility
+   ☐ Inheritance -> compile-time flexibility -> polymorhphis,
+   ☐ Composition = "has-a" relationship
+   ☐ Inheritance = "is-a" relationship
+ ☐ Simplifying Decorator design pattern with an Abstract Class
+   ☐ Since all decorators have a composition of "aElement", we can generalize this in a "AbstractDecorator" and have all deceorators extend this
+ ☐ final keyword = can't be overridden
+ ☐ Proper use of inheritance: inheritance should only be used to "extend" the behavior of the super class - LSP (Liskov Substitution Principle)
+   ☐ LSP states that methods of a subclass:
+     ☐ Cannot have stricter preconditions
+     ☐ Cannot have less strict postconditions
+     ☐ Cannot take more specific types as parameters
+     ☐ Cannot make the method less accessible (changing from public to private/protected)
+     ☐ Cannot throw more checked exceptions
+     ☐ Cannot make a less specific return type
+
+Chapter 8 - Inversion of Control:
+  ☐ Inversion of Control - Delegating flow of control to something else (a framework, whatever the fuck that is)
+  ☐ OBSERVER Design Pattern
+
+
+Chapter 9 - Functional Programming:
+ ☐ First class functions -> treating functions as variables
+ ☐ Functional interface Predicate<T>:
+   ☐ Has one abstract method 'test(T)' and returns a boolean
+       Predicate<Card> blackCardFilter = new Predicate<Card>() {
+         public boolean test(Card pCard) {
+           return pCard.getSuit().getColor() == Suit.Color.BLACK;
+         }
+     };
+   ☐ Can be simplified with lambda expressions:
+     Predicate<Card> blackCardFilter = (Card pCard) -> pCard.getSuit().getColor() == Suit.Color.BLACK;
+     OR
+     Predicate<Card> blackCardFilter = (Card pCard) -> {return pCard.getSuit().getColor() == Suit.Color.BLACK;};
+ ☐ Lamda expressions can also be passed as arguments themselves:
+   ☐ Given a list of cards 'aCards':
+     aCards.removeIf((Card pCard) -> pCard.getSuit().getColor() == Suit.Color.BLACK);
+     ☐ Suppose that the comparison (on the right side of the lambda expression) is represented as a non-static helper method in class card called 'hasBlackSuit()'
+     aCards.removeIf((Card pCard) ->pCard.hasBlackSuit());
+     ☐ We can simplify this even further with a method reference. This is done with double colon P::m such that P is the class and m is the method:
+     aCards.removeIf(Card::hasBlackSuit)
+     ☐ Now suppose hasBlackSuit is a static method in a class CardUtils
+     aCards.removeIf(CardUtils::hasBlackSuit);
+     ☐ o::m can also be used such that o is a reference to an object instead of a class
+     ☐ Suppose there is a method 'topSameColorAs(Card)' in the deck class, which checks if the Card argument is the same color as the card on top of the deck
+     Deck deck = new Deck()
+     ...
+     aCards.removeIf(deck::topSameColorAs)
+     ☐ Which is the same as...
+     Deck deck = new Deck()
+     ...
+     aCards.removeIf((card) -> deck.topSameColorAs(card));
+  ☐ Using lambdas as functions to compose behavior:
+    public class Card {
+      public static Comparator<Card> bySuitComparator() {
+        return ((card1, card2) -> card1.getSuit().compareTo(card2.getSuit()));
+      }
+    }
+    ((card1, card2) -> card1.getSuit().compareTo(card2.getSuit())) is being used as teh 'compare()' method that is otherwise overriden when returning new Comparator<Card>
+    ☐ To further define the comparison, we can use more than one boolean expression (ensure to add brackets)
+    ...
+    return ((card1, card2) -> { 
+      if (card1.getSuit() == card2.getSuit()) {
+        return card1.getRank().compareTo(card2.getRank());
+      }
+
+      else {
+        return card1.getSuit().compareTo(card2.getSuit());
+      }
+    });
+
+    ☐ Using comparing() and thenComparing from the Comparator interface can help further reduce the statements:
+    public static Comparator<Card> byRankComparator() {
+      return new Comparator.comparing(card -> card.getRank()) //the value passed to comparing is the value we wish to compare on
+    }
+
+    public static Comparator<Card> bySuitComparator() {
+      return new Comparator.comparing(card -> card.getSuit());
+    }
+
+    ☐ and to cascade comparison:
+    public static Comparator<Card> byRankThenSuitComparator() {
+      return new byRankComparator().thenComparing(bySuitComparator()) //input passed to thenComparing is a comparator on the same type; passing a lambda works too
+    }
+    ☐ reversed() takes comparator as implicit argument and reverses the comparison order
+    byRankComparator().reversed()
+      ☐ ...will compare the second card passed as argument to the first (as opposed to first to second)
+ ☐ a negate() method exists in the function library to do the opposite of another function:
+   Predicate<Card> blackCardFilter = 
+     card -> card.getSuit().getColor() == Suit.Color.Black;
+
+   Predicate<Card> redCardFilter = blackCardFilter.negate();
+ ☐ Supplier<T> is a functional interface that capture the behavior of a method responsible for returning an object
+   ☐ its method get() takes no argument and returns a value type T
+   private class InfiniteCardSource implements CardSource {
+     private final Supplier<Card> aCardSupplier;
+
+     public InfiniteCardSource(Supplier<Card> pCardSupplier) {
+       aCardSupplier = pCardSupplier
+     }
+
+
+     public Card draw() {
+       return aCardSupplier.get();
+     }
+   }
+   ☐ Here, pCardSupplier represents ANY function that returns a card. For example (given some static method 'random' defined in class card that also has type ()->Card):
+     InfiniteCardSource randomCardSource = new InfiniteCardSource(Card::random);
+   ☐ Another example with a lambda expression:
+     InfiniteCardSource aceOfHearts = new InfiniteCardSource(()-> Card.get(Rank.ACE, Suit.HEARTS));
+
+ ☐ Alternateively, Consumer<T> does the opposite as Supplier<T>: it is a functional interface that captures the behavior of a method responsible for consuming an object and returning nothing (has type T->())
+   ☐ Instead of get(), has method accept(T) that returns void and calls to the function of type (T->())
+   ☐ Recall Decorating example (page 258)
+ 
+ ☐ Streams:
+   ☐ call stream() on a collection of objects to create a stream
+   ☐ Streams also support opperations taht take a stream as their implicit argument and output a different stream; this process is called piplining
+   ☐ .count() counts the elements in a stream 
+   ☐ .sort() sorts the elements in a stream (assumes the class of the objects in the collection implement Comparable and have defined compareTo)
+   ☐ Stream.concat(Stream<T> stream1, Stream<T> stream2) combines and sorts two streams
+   ☐ .distinct() produces a new stream with duplicates removed
+   ☐ Higher-Order functions in streams:
+     ☐ .forEach(Consumer<T>) will apply a function to each object in the stream of type T -> ()
+     Ex -> 
+     new Deck().cards().stream().forEach(card -> System.out.prinln(card))
+     ☐ Streams have operations that can take predicates and check if all objects of the stream satisfy the predicate:
+       ☐ allMatch, anyMatch, noneMatch
+       List<Card> cards = ...
+       boolean allClubs = cards.streams.allMatch(card -> card.getSuit() == Suits.CLUBS);
+   ☐ Filtering streams:
+     ☐ .filter(Predicate<T>) takes a predicate as argument and will return a stream with objects that satisfy the predicate
+   ☐ mapping streams:
+     ☐ .map(Function<T,R>) applies a function to all of the objects in the stream, with each function call returning something new, and returns a new stream with these new objects
+       Stream<Color> colorStream = cards.stream().map(card -> card.getSuit().getColor()) returns a stream of Color objects
+     ☐ .mapToInt(Function<T,Integer>) maps the objects in the stream to an interger
+   ☐ If the stream contains integers, we can call .sum() to sum all integers in the stream
+   ☐ Given a Collection of Collections, like a list of Decks, lets say we want to produce a stream of Cards.
+     ☐ Use flatMap:
+       listOfDecks.stream().flatMap(deck -> deck.getCards().stream())
+       ☐ ...which produces a single stream of all of the cards in each deck
+   ☐ To reduce a stream into a list:
+     List<Card> result = new ArrayList<>();
+     cards.stream().filter(Card::isFaceCard).collect(Collectors.toList());
+     ☐ this is essentially:
+     List<Card> result = new ARrayList<>();
+     cards.stream().filter(Card::isFaceCard).forEach(card -> result.add(card));
+
+     ☐ essentially, define a new empty list/array. then, use forEach on the stream to add each element into the collection
+
+
+
+REVIEW:
+  ☐ Map, hashSet, EnumMap -> their methods/commands
+    ☐ all maps have .put(key, value)
+  ☐ List<T> = new ArrayList<>()
+  ☐ Show[] is a list, not an array unlike the above
+  ☐ Extending Iterable vs implementing Iterable
+  ☐ When overrideing equals, dont forget about hashCode()
+    ☐ Common solution -> hashCode() {return Objects.hash(//insert all fields in class)}
+  ☐ Last 5 problems of Chapter 6 exercises
+  ✔ Cloneable @done (23-12-18 17:21)
 
 
 Design Patterns:
@@ -58,16 +331,58 @@ Design Patterns:
     ☐ Context: Define a family of algorithms, encapsulate each one, and make them interchangeable; lets the algorithms vary independently from clients that use it.
 
 
+    Method isStriaghtFlush = PokerHand.class.getDeclaredMethod("isStraightFlush");
+    isStraightFlush.setAccessible(true);
 
+    assertTrue(isStraightFlush.invoke(aPokerHand));
+  }
 
+  @Test
+  public void testForNotStriaghtFlush_WRONGSUIT() {
+    private Card card2 = new Card(Rank.TWO, Suit.HEARTS);
+    private Card card3 = new Card(Rank.THREE, Suit.HEARTS);
+    private Card card4 = new Card(Rank.FOUR, Suit.SPADES);
+    private Card card5 = new Card(Rank.FIVE, Suit.HEARTS);
+    private Card card6 = new Card(Rank.SIX, Suit.HEARTS);
+    private aPokerHand = new PokerHand(card2, card3, card4, card5, card6);
 
+    Method isStriaghtFlush = PokerHand.class.getDeclaredMethod("isStriaghtFlush");
+    isStriaghtFlush.setAccessible(true);
+    assertFalse(isStraightFlush)
+  }
 
+  @Test
+  public void testForNotStriaghtFlush_WRONGRANK() {
+    private Card card2 = new Card(Rank.TWO, Suit.HEARTS);
+    private Card card3 = new Card(Rank.THREE, Suit.HEARTS);
+    private Card card4 = new Card(Rank.NINE, Suit.HEARTS);
+    private Card card5 = new Card(Rank.FIVE, Suit.HEARTS);
+    private Card card6 = new Card(Rank.SIX, Suit.HEARTS);
+    private aPokerHand = new PokerHand(card2, card3, card4, card5, card6);
 
+    Method isStriaghtFlush = PokerHand.class.getDeclaredMethod("isStriaghtFlush");
+    isStriaghtFlush.setAccessible(true);
+    assertFalse(isStraightFlush)
+  }
 
+}
 
+public class BiCardSourceTest {
+  CardSource nullCardSource1 = CardSource.NULL;
+  CardSource nullCardSource2 = CardSource.NULL;
+  Deck deck1 = new Deck();
+  Deck deck2 = new Deck();
 
+  private final nullBiCardSource = new BiCardSource(nullCardSource1, nullCardSource2);
+  private final BiCardSource_TwoDecks = new BiCardSource(deck1, deck2);
+  private final BiCardSource_OneDeck = new BiCardSource(nullCardSource1, deck1);
 
+  @Test
+  public void testFirstSourceDrawNotEmpty {
+    assertSame()
+  }
 
+}
 
 
 

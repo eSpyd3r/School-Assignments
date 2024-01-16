@@ -1,3 +1,10 @@
 UML Diagrams:
     ☐ Composition -> tied to life cycle
     ☐ Aggregation -> not tied to life cycle
+
+Lecture 3:
+    ☐ Classes: User, Admin, Application, Game, Block, Level, BlockArrangement, Ball, Paddle
+    ☐ Attributes: username, password, name, points, levelNumber, positionX, positionY, random, numberOfBlocks, maxSpeed, minSpeed, maxLength, minLength, speedIncreaseFactor
+    ☐ Enums: COLOR
+    ☐ Classes(attributes) User/Admin(username, passowrd), Game(name), Block(COLOR, points) 
+    ☐ https://cruise.umple.org/umpleonline/umple.php?model=240115rswvtvqzxpsj 

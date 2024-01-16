@@ -1,4 +1,0 @@
-Entity: Electric Bike
-Attribute: Battery
-Description: Represents the Battery level of an electric
-Constraints: The value must be between 1 (Empty) and 5 (Full) inclusive.

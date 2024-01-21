@@ -2,3 +2,13 @@ Entity: Electric Bike
 Attribute: Battery
 Description: Represents the Battery level of an electric
 Constraints: The value must be between 1 (Empty) and 5 (Full) inclusive.
+
+Entity: RegisteredUser
+Attribute: ID
+Description: Represents unique registered user entity
+Constraints: Unique across system
+
+Entity: OneTimeRental
+Attribute: RentalID
+Description: Uniquely identifies each OneTimeRental
+Constrains: Unique across whole system (unique from all other ids, such as the Registered User IDs)

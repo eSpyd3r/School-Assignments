@@ -8,3 +8,8 @@ Lecture 3:
     ☐ Enums: COLOR
     ☐ Classes(attributes) User/Admin(username, passowrd), Game(name), Block(COLOR, points) 
     ☐ https://cruise.umple.org/umpleonline/umple.php?model=240115rswvtvqzxpsj 
+
+Lecture 7:
+    ☐ EBNF spec for pizza:
+    ☐ Title = {"a" - "z" | "A" - "Z"}
+    ☐ Toppings = Title, " - " {} 

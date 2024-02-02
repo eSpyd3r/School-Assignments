@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="IMS" nsURI=": http://mcgill.ca/emf/a1/ims" nsPrefix="IMS">
+  <eClassifiers xsi:type="ecore:EClass" name="Field" instanceClassName="Field">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sections" lowerBound="1"
+        upperBound="-1" eType="#//Section" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assetNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        changeable="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Section" instanceClassName="Section">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assetNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="irrigationpumps" lowerBound="1"
+        upperBound="-1" eType="#//IrrigationPump" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IrrigationPump" instanceClassName="IrrigationPump">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assetNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="setting" eType="#//Setting"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Setting" instanceClassName="Setting">
+    <eLiterals name="LOW"/>
+    <eLiterals name="MEDIUM" value="1"/>
+    <eLiterals name="HIGH" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IrrigationRule" instanceTypeName="IrrigationRule"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Condition" instanceClassName="Condition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="forcastRangeLower" upperBound="100"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="forcastRangeUpper" upperBound="100"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Condition" instanceTypeName="Condition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Action"/>
+</ecore:EPackage>

@@ -17,3 +17,23 @@ Lecture 2 - How data moves:
 
 Lecutre 3 - How do we "chop-up" packets:
   ☐ Binary/Decimal representation
+
+
+Lecture 7:
+    ☐ Recall IPv4 -> X.Y.Z.W s.t. X, Y, Z, and W each represent 1 byte (8bits)
+      ☐ 8 x 4 = 32 bits
+      ☐ 2 ^ 32 different addresses
+    ☐ Regions of the world are separated into different address spaces among the IPv4 possibilities
+      ☐ North American devices start with a certain X, Europe has a different set of Xs, etc.
+    ☐ 2^32 ~ 4 billion
+      ☐ Not that many, considering there are about 6 billion people
+    ☐ IP address "crunch" -> running out of IP addresses
+    ☐ Routers serve as mediums -> they represent a "public IP address" of a LAN
+      ☐ Device -> Router -> Internet
+      ☐ Private device IP address is translated by the router to a public IP address
+      ☐ Router knows which device sends a request, and once a callback is recieved, the router knows which device made the initial request to relay the callback
+      ☐ Since private device IPs are specific to routers, 2 devices in 2 separate LANs can have the same private device IP as long as they are connected to different routers
+      ☐ Helps to solve the problem of "running out of IP addresses"
+   ☐ On each device, operations that communicate with the internet are each given their own "Port"
+     ☐ That way, packets are sent to IPs (of the device) with a port (of the operation, for the device to interpret)
+ 

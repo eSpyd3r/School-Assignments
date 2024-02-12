@@ -1,0 +1,3 @@
+Shit to remember because im a vegetable:
+  ☐ Pumping Lemma -> proves a language is NOT regular; cannot be used to prove a language is regular
+  ☐ Myhill-Nerode Theorem -> provides a condition that all regular languges MUST have

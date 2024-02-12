@@ -34,6 +34,54 @@ Lecture 7:
       ☐ Router knows which device sends a request, and once a callback is recieved, the router knows which device made the initial request to relay the callback
       ☐ Since private device IPs are specific to routers, 2 devices in 2 separate LANs can have the same private device IP as long as they are connected to different routers
       ☐ Helps to solve the problem of "running out of IP addresses"
-   ☐ On each device, operations that communicate with the internet are each given their own "Port"
+   ☐ On each device, individual (separate tabs, for example) operations that communicate with the internet are each given their own "Port"
      ☐ That way, packets are sent to IPs (of the device) with a port (of the operation, for the device to interpret)
+
+Lecture 8:
+  ☐ When reaching out to webservers, the default destination port is 80 (universal agreement)
+    ☐ From source to destination, the source wants to send the request to destinationIP:80
+      ☐ Since it is assigned port 80, webservers are considered their own operations
+      ☐ This is the case for ALL webservers/hosts (google, mcgill, etc.)
+  ☐ Doing so establishes a unique "communication strip" between 2 distinct IPs with ports (A device with a specific operation sends a request to a webserver with a specific port 80)
+  ☐ Laptop -> Router(NAT: Network Address Translator) -> "Internet" -> Webserver
+    ☐ Laptop part of a LAN
+    ☐ Outgoing:
+      ☐ Source IP: Laptop/DeviceIP:OperationPort
+      ☐ DestinationIP: webserverIP:80
+    ☐ Router(NAT): sends packet on behalf of the LAN device
+      ☐ New Source IP: RouterIP:RandomizedUnusedPort
+      ☐ The RandomizedUnusedPort is a mapping from (Laptop/DeviceIP:OperationPort) -> (RandomizedUnusedPort)
+        ☐ Network Address Translation (NAT) Table
+      ☐ DestinationIP: WebserverIP:80
+    ☐ Webserver recieves packet, then sends a callback to RouterIP:RandomizedUnusedPort, which is then translated back to Laptop/DeviceIP:OperationPort
+    ☐ That is, the Incoming Packet Flow is:
+      ☐ Source: WebserverIP:80
+      ☐ Destination: RouterIP:RandomizedUnusedPort
+      ☐ ...then is converted to...
+      ☐ Source: WebserverIP:80
+      ☐ Destination: Laptop/DeviceIP:OperationPort
+    ☐ "Leaving a LAN: Change Source + Update Table (perform translation)", "Entering a LAN: Change Destination"
+  ☐ //IPs are labeled in the LANs that interpret it
+    ☐ For example, a computer connected to a router:
+      ☐ the computer's IP is written within the LAN of the router, not just in the LAN of the computer
+  ☐ Each NAT has its own table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  

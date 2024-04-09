@@ -1,0 +1,178 @@
+OS HISTORY:
+  ☐ ENIAC:
+    ☐ First programmable general purpose computer
+    ☐ UPENN
+    ☐ Program was input by flipping switches and connecting cables. Usually took weeks.
+    ☐ At this time, NO OS as none had yet existed
+    ☐ Did not store programs in memory
+    ☐ Instead, computer resources were manged by operators
+    ☐ Can be considered "mainframe computer"
+      ☐ mainframe computer -> used by big companies for big data processing
+      ☐ all computers of this era were of this type
+ ☐ IBM 701:
+   ☐ IBM's first comercially-available, stored-program mainframe computer
+   ☐ Used for scientific computation (aircraft, nuclear explosives)
+   ☐ Ran study on blackjack: rules ofr hitting, standing, doubling (1954)
+   ☐ First "AI" program: checkers
+   ☐ First automated translation software (Russion to English) for US Air Force
+   ☐ Unlike ENIAC, IBM 701 was a stored-program computer.
+   ☐ Programs were fed in via punch cards
+     ☐ Much easier than having to rewire/flip switches every time
+   ☐ No OS
+
+The Process:
+  ☐ Direct Execution -> allow one process to run until it's done
+    ☐ No overhead since process has full control of the CPU, can do anything it wants and will not be paused
+    ☐ Since full control of CPU, can hog all resources
+    ☐ Can corrupt files on hard drive, crash OS, etc
+    ☐ No isolation between processes
+  ☐ Kernel:
+    ☐ Subset of the OS with special rights and responsibilities
+    ☐ Trust with full hardware access
+    ☐ Has its own stack and special subset of instructions that only it can perform
+  ☐ Processor Modes:
+    ☐ User mode:
+      ☐ code has restrictions: it cannot directly issue I/O requests. If it tried to do so, the processor would raise an exception and the OS would likely then kill the process
+      ☐ No Privileged instructions
+      ☐ No direct access to all of memory
+      ☐ No direct access to devices
+    ☐ Kernel Mode:
+      ☐ code can do anything it likes, what the OS runs in
+      ☐ Priviliged Instrictions
+        ☐ Set mode bit
+      ☐ Direct access to all of memory
+      ☐ Direct access to devices
+ ☐ System Calls:
+   ☐ To safely switch between kernel and user mode, the OS exposes certain sensitive operations through a set of system calls, or syscalls for short.
+   ☐ A system call is a special function call that goes into OS code and runs on the CPU in kernel mode
+     ☐ Only in kernel mode can sensitive operations (like access to hardware be performed)
+   ☐ The API to manage processes has a standard called the POSIX API: a standard set of system calles an OS must implement
+   ☐ Most modern OS's are POSIX compliant
+   ☐ Programs written for the POSIZ API can run on any POSIX compliant OS, ensuring program protability
+ ☐ Perfmorming a system Call:
+   ☐ Each OS has a kernel API that wraps system calls in function calls, to make them easier to use and more protable
+   ☐ Then, the kernel API is then wrapped by program language libraries (like libc)
+     ☐ the C library function printf invokes the write system call
+     ☐ although libc makes system calls look like regular function calls, they are not function calls. Instead, they are a transition between the user and kernel (and thus much more expensive)
+ ☐ Process APIs
+   ☐ Some system calls involve management of processes. This is knows as the Process API and includes:
+     ☐ create (creates a process)
+     ☐ destroy (destroys a process)
+     ☐ wait
+     ☐ misc
+     ☐ get info
+ ☐ fork
+   ☐ fork is a system call that can create a new process
+   ☐ calling fork creates an (almost) exact copy of the calling process, which starts running at the line directly after the fork call. It is called the child process, while the initial process (which is still running) is called the parent.)
+   ☐ the child will have its own copy of the address space, registers, PC, etc. One difference from the parent: the value it recieves from the fork call -- it recieves 0, while the parent receives the PID of the newly-created child.
+     ☐ output of fork program is not detministic
+   ☐ In Unix-like OS's, every process is created by forking from another process
+ ☐ wait
+   ☐ wait is a system call that lets a parent wait until a child process has finished running before continuing to execute. By using wait, we make out fork program deterministic
+   ☐ will not return until the child has run and exited
+   ☐ waitpid also exists which waits for a child process with a specific PID to end
+ ☐ exec
+   ☐ exec is a system call that lets us run a program different from the current (calling) program.
+   ☐ it transforms the current process into the new one: it overwrites the ucrrent instructions in memory with the new program's instructions (after loading them from disk), and re-initializes the heap and stack and other parts of the program's memory space.
+   ☐ exec never returns
+ ☐ fork, wait, and exec together:
+   ☐ these 3 are essential in building a shell
+   ☐ When typing a command into the shell, it calls fork to make new child process, exec to make the child run the commnad, and wait to wait until the child completes before printing out a new prompt.
+ ☐ Traps
+   ☐ A trap is generated by the CPU as a result of error
+     ☐ Divide by zero
+     ☐ Execute privileged instruction in user mode
+     ☐ Illegal acces to memory
+   ☐ Works like an "involuntary" system call
+     ☐ Sets mode to kernel mode
+     ☐ Transferl control to kernel
+   ☐ return-from-trap
+     ☐ the trap and return-from-trap instructions are special. They do the following all at once:
+       ☐ jump into kernel code (or process code, for return-from-trap)
+       ☐ change the processor mode (user to kernel, or kernel to user)
+       ☐ load the kernel stack (or process stack, for return-from-trap)
+ ☐ Interupt:
+   ☐ an interupt is generated by a device needing attention
+     ☐ packet arrived from the network
+     ☐ Disk I/O completed
+     ☐ etc.
+   ☐ Also works like an involuntary system call
+ ☐ OS control flow
+   ☐ the OS is an event-driven program. It only runs when a trap, interrupt or system call is generated
+   ☐ In each of these cases, the processor will effect a mode switch from user mode to kernel
+   ☐ Once in kernel mode, the kernel can perform whatever operation, then return control back to the process, using a special return-from-trap instruction
+ ☐ Limited Direct Execution
+   ☐ Recall direct execution: one process runs on CPU until done, and has full control of hardware (CPU, memory, disk)
+   ☐ Limited direct execution: when a proces wants to do something sensitive, it issues a system call, which enters into the OS and then comes back using a return-from-trap. Once done, the process exits, which also traps back into the OS
+ ☐ OS structure:
+   ☐ User/OS separation -> "monolihthic OS"
+     ☐ Downside:
+       ☐ The OS is a huge piece of software; Millions of lines of code and growing
+       ☐ If something goes wrong in kernel mode, most likely, machine will halt or crash.
+       ☐ Incentive to move stuff out of kernel mode
+     ☐ No need for entire OS in kernel
+       ☐ Some pieces can be in user mode
+         ☐ no need for privileged access
+         ☐ no need for speed
+     ☐ Example: daemons
+       ☐ system log
+       ☐ printer daemon
+       ☐ Etc.
+   ☐ Microkernel
+     ☐ Absolute minimum in kernel mode
+       ☐ interprocess communication primitives
+     ☐ All the rest in user mode
+     ☐ In practice, have failed commercieally (except for niches)
+     ☐ The "systems programs" model has won out
+ ☐ Single vs multiple process system
+   ☐ Process operation
+   ☐ From the point of view of an OS, a process does two things:
+     ☐ either it computes (using the CPU), or
+     ☐ it does I/O (using a device)
+   ☐ In single process systems, process must be completed before moving onto next
+     ☐ causes long wait times for processes waiting for the previous to complete
+     ☐ Inefficient due to long CPU idle times and bad interactivity (can't do anything while a process is running)
+   ☐ The issues of a single process system can be addressed by using a multi-process system.
+     ☐ In multi-process systems, while a process waits for an I/O request to complete, another process can use the CPU!
+     ☐ During the idle times of a process, the CPU will move to the next process until the CPU can resume the original process again
+       ☐ High utilization, short CPU idle times
+ ☐ Process States
+   ☐ Running: executing instructions
+   ☐ Ready: ready to run, but not executing at the moment
+   ☐ Blocked: waiting for some event to take place (e.g., for OS to perform I/O request) until it can become ready
+   ☐ See Lec 2. slide 89 of the Process State Diagram for Multiprocessing System
+ ☐ Process switching
+   ☐ Multiprocessing
+     ☐ In a system that supports multiple processes, there are two important considerations:
+       ☐ how to switch between processes, and 
+       ☐ how to determine which process to run (scheduling)
+     ☐ If a process is running on the CPU, then the OS is not. But if it is waiting on I/O, then another process should run
+       ☐ Also, a process should not be able to run forever
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

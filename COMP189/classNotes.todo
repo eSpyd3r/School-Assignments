@@ -37,7 +37,7 @@ Lecture 7:
    ☐ On each device, individual (separate tabs, for example) operations that communicate with the internet are each given their own "Port"
      ☐ That way, packets are sent to IPs (of the device) with a port (of the operation, for the device to interpret)
 
-Lecture 8:
+Lecture 8 //Last Lecture for Exam 2:
   ☐ When reaching out to webservers, the default destination port is 80 (universal agreement)
     ☐ From source to destination, the source wants to send the request to destinationIP:80
       ☐ Since it is assigned port 80, webservers are considered their own operations
@@ -66,6 +66,19 @@ Lecture 8:
       ☐ the computer's IP is written within the LAN of the router, not just in the LAN of the computer
   ☐ Each NAT has its own table
 
+Lecture 9:
+  ☐ IPv6 -> 128 bit address vs. IPv4 -> 32 bit address
+  ☐ Virtual Machine (VM) -> software program that is emulating hardware (multiple computers for example)
+  ☐ Large Data Centers have servers which run VMs; corporations can rent these servers to host their websites
+    ☐ Important for providing secure connections to specific geographic locations
+    ☐ VMs act as individual computers that each talk to the internet
+  ☐ Larger corporations will have their own data centers that may/may not be for rent (Apple uses their own for themselves)
+  ☐ Using VPNs:
+    ☐ In order to send a packet to a private destination (can't be reached without VPN), send a packet "package" to the VPN server (the destination IP of the packet is no longer the private IP; instead, the destination is the IP of the VPN server)
+    ☐ VPN servers behave as a medium AND a NAT
+    ☐ That is:
+      ☐ Home computer (S: device, D: VPN Server of Private Network) -> VPN Server (S: VPN Server, D: Private IP in Private Network)
+    ☐ Note: VPN has 2 IP addresses -> 1 "public" IP for the outside devices to connect to, and 1 "private" IP which is for its internal use within its private network (this is only visible to those within the same LAN)
 
 
 

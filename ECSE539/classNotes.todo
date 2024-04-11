@@ -13,3 +13,6 @@ Lecture 7:
     ☐ EBNF spec for pizza:
     ☐ Title = {"a" - "z" | "A" - "Z"}
     ☐ Toppings = Title, " - " {} 
+
+Midterm Review:
+    ☐ Assignment 1 -> Transfer objects

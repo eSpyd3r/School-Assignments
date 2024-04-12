@@ -127,6 +127,205 @@ OS HISTORY:
          ☐ x86 has four rings, but modern OS's use only two of them (ring 0 - kernel mode, ring 3 - user mode)
          ☐ ARM TrustZone: two rings("worlds")
          ☐ Multics had support for 8 rings
+ ☐ 1969-75: Unix:
+   ☐ PDP:
+     ☐ Minicomputer created by DEC
+     ☐ Minicomputer = smaller, much lower cost computer than a mainframe
+     ☐ Was used to start the code for Unics by Thompson and Dennis Ritchie from Bell Labs, both of which were working on multics
+     ☐ Unics, based on Multics was aimed to be more simple and minimalistic designed for lower-end machines.
+     ☐ Later shortened to Unix
+   ☐ Unix:
+     ☐ Ritchie and Thompson began implementing a hierarchial file system (similat to Multics), along with a shell and assembler
+       ☐ Devices treated as files
+       ☐ Process control via form, et.c)
+       ☐ Pipes for inter-process communication
+     ☐ v1.0 released in 1971
+     ☐ B and C:
+       ☐ At the same time that they were working on Unix, Thompson and Ritchie developed the B programming language, a simplified version of something called BCPL
+       ☐ ritchie continued to improve the new language, and by 1972, renamed it to C.
+     ☐ Portability:
+       ☐ In 1973, Unix v4 was released. Its kernel was rewritten in C, one of the first OS kernels to be written in a high-level lanfuage.
+       ☐ the migration to C made Unix a portable OS, meaning that it could be easily ported to other machines, since only a small amount of machine-dependednt code had to be changed
+     ☐ Popularity:
+       ☐ Because of the continuing development, portability and low licensing cost, Unix became increasingly popular.
+       ☐ New Version continued to be released in the 1980s, including versions for microcomputers
+         ☐ A microcomputer was a small inexpensive computer for hobbyists, which first came out in the early 1970s
+       ☐ By 1978, over 600 machines were running some form of Unix, and over 2,000 by 1981. By 1986, it had grown to 230,000 machines.
+     ☐ The Unix Philosophy:  
+       ☐ Make it easy to write, test, and run programs.
+       ☐ Interactive use insteaad of batch processing.
+       ☐ Economy and elegance of design due to size constraints
+       ☐ Self-supporting System: all Unix software is maintained under Unix
+ ☐ 1974: CP/M:
+   ☐ CP/M = Control program for Microcomputers
+   ☐ Like OS/360 (and Unix), allowed software developers to not have to worry about technical details about the computer hardware
+   ☐ The most popular OS for microcomputers in the 70s
+     ☐ Supported many different brands
+   ☐ Sold by mail-order to hobbyists for $74
+   ☐ 1982: Annual sales over $20 million
+   ☐ Components:
+     ☐ Basic Input/Output system (BIOS): Controlled hardware components (e.g., device input, output to display, reading/writing disk sectors). Differed based on the hardware. Small.
+     ☐ Basic Disk Operating System (BDOS): Filesystem, process redirection etc. Well-defined set of system calls
+     ☐ Console Command Processor (CCP): Shell (DIR, ERA, COM fiels for utility programs)
+   ☐ Software Industry
+     ☐ Software copies would sell in the hundreds/thousands for mainframs and microcomputers since they were limited to big corporations/institutions. But microcomputers were selling in the hundreds of thousands
+     ☐ Since CP/M was dominant in this time period, software that targeted CP/M could run on a large array of differnt machines
+     ☐ The market share for a software product thus expanded greatly. Companies started making software products for microcomputer users to buy directly.
+ ☐ 1981: MS-DOS:
+   ☐ IBM:
+     ☐ Founded as a record-keeping/measuring system company in 1911
+     ☐ Became leading manufacturer of punch-card tabulating systems
+     ☐ 1940s: Initial forays into computers with MARK I (Harvard); first commercial hard drive
+     ☐ 1964: System/360 and OS/360. Dominant in the computer mainframe industry
+     ☐ IBM eventually decided to make minicomputers in 1976, 12 years after DEC's PDP-8. But they couldn't keep pace. By the start of the 1980s, their market share in minicomputers was falling
+     ☐ Annual sales of microcomputers booming, so IBM also decided to make a microcomputer, but was also late to the game and couldn't keep pace; they knew they needed to enter the market with a strong product t oavoid another failure
+     ☐ They started work on the IBM Personal Computer (IBM PC) in 1980 and released it the next year
+       ☐ IBM PC used Intel's newest 8088 microprocessor, a varient of the 8088 (i.e. x86 instruction set)
+       ☐ As the most popular OS, with the msot available software, CP/M (designed for the intel 8080 and Z80 chips) was expected to be updated to work on the 8087/88 as well
+       ☐ IBM talked with Gary Kildall (?) about having an x86 version of CP/M come pre-installed on their PC. But they could not reach a deal, so IBM looked elsewhere
+     ☐ Quick and Dirty Operating System (QDOS)
+       ☐ Tim Paterson of Seattle Computer Products was one the people eagerly awaiting CP/M for the 8086/88 chip, since sales of their computer kits were falling. But it kept getting delayed by DRI
+       ☐ So... he wrote his own version of CP/M for x86
+       ☐ He took the CP/M reference manual and duplicated its API, making as exact of a copy as possible for the API, but with a different filesystem (FAT) and other changes.
+         ☐ He called it the Quick and Dirty OS (QDOS)
+     ☐ Microsoft
+       ☐ 1975: Bill Gates and Paul Allen found Microsoft to distribute an implementation of BASIC for the Altair 8800 (the first microcomputer, released the year before)
+     ☐ MS-DOS: 
+       ☐ Seattle Computer Products was a business partner with Microsoft, as was IBM
+       ☐ When Bill Gates heard that IBM was looking for an OS and Gary KIldall had turned them down, he deceaded to licese QDOS, work on it a bit and license it to IBM
+       ☐ In 1981, Microsoft purchased QDOS outright for 75,000 and renamed it to Microsoft DISK Operating System, OR MS-DOS
+       ☐ MS-DOS became the OS of choice for 8086-like chips
+       ☐ Manufactureres would license the OS and add their own device driver, then pre-install it on their machines
+     ☐ IBM PC
+       ☐ The IBM PC became a runaway hit, highest sale in microcomputer market. 200,000 sold per month by second year. IBM becomes most valuable company in the world by 1984
+ ☐ 1984: GUIs and the Mac
+   ☐ December 9, 1968: "The mother of all Demos"
+     ☐ the computer mouse
+     ☐ window-based interface
+     ☐ basic hypertext
+     ☐ basic word processing
+     ☐ video conferencing
+     ☐ real-time collaborative document editing
+     ☐ Today it is recognized as one of the most important events in the development of modern personal computing
+   ☐ Xerox
+     ☐ Founded 1906. Sold papers, photocopiers etc.
+     ☐ In the late 1960s, with computers on the rise and the notion of the "paperless office" taking hold in some businesses, Xerox got nervous.
+     ☐ They wanted to keep pace with the new technology. So, in 1970, they formed a research lab called PARC: Palo Alto Research Center
+     ☐ Xerox PARC:
+       ☐ PARC attracted the top CS researchers in the country, promising them that hey could work on whatever dream project they wanted.
+       ☐ In particular, PARC was situated very close to ARC, at the Stanford Research Park. As ARC's funding began drying up, many ARC researchers moved over to PARC
+       ☐ First invention was the laser printer, was THE printer of the time
+       ☐ Next, researchers decided to build a computer that could prepare nice documents to be printed on the laser printer
+       ☐ They called it the Alto. It was released in 1973
+         ☐ A display with full raster-based, bitmapped graphics
+           ☐ Each pixel could be turned on and off independently, unlike typical terminals of the time
+         ☐ Had a version of Englebart's mouse. Mouse was depicted on screen as a diagonal pointing arrow
+       ☐ 1974: Xerox makes Smalltalk for the Alto, a programming language and development environment
+         ☐ The first object oriented language. Automatic memory management.
+       ☐ Introduced many modern GUI concepts: movable windows with title bars, overlapping windows, icons, popup menus, scroll bars, radio buttons, dialog boxes
+         ☐ Desktop metaphor/WIMP
+   ☐ The desktop metaphor
+     ☐ the idea that a computer monitor is like a "desk" with documents and file folders placed on top of it, which can be opened
+     ☐ Small applications called "desk accessories" (alarm clock, note pad, etc.) can also be opened
+     ☐ Trash can, etc.
+   ☐ WIMP: Windows, icons, menus, pointer
+     ☐ Model of human-computer interaction. Developed at PARC
+     ☐ Most desktop GUIs use this model (But note that mobile OS's do not!)
+   ☐ Failure of PARC
+     ☐ The Alto was never commercial product. Only about 2,000 were made, mostly in various Xerox labs and some in universities. Cost was high (32,000)
+     ☐ In 1981, Xerox commercialized the idea with an updated computer called the Xerox Star. But it also cost a lot ($17,000) and had very little market impact, even though it had a GUI. (First commercial computer with a GUI)
+     ☐ Researchers started leaving
+   ☐ Apple
+     ☐ Apple founded on April 1 1976
+     ☐ It was formed t osell the Apple I, a motherboard to be used as part of a microcomputer.
+     ☐ In 1977, they released the Apple II microcomputer. It became the best-selling microcomputer, the first to be able to display color graphics (Could run DOS/CPM)
+     ☐ But by 1983, it was surpassed in sales by the IBM PC
+     ☐ Steve Jobs and Xerox:
+       ☐ In 1978, Apple began working on a new computer called the Lisa, with a home-made oeprating system.
+       ☐ Steve Jobs visited PARC in 1979, and was astounded by the Alto's GUI
+       ☐ In exchange for some Apple shares, he was allowed to bring his Lisa team to get a tour of PARC and demo of the GUI
+         ☐ Many PARC engineers also came over to Apple
+     ☐ Lisa OS
+       ☐ The Lisa OS expanded on the Alto's GUI
+         ☐ First pull-down menu bar (menus at the top)
+         ☐ Keyboard shortcuts (e.g., for copy and paste)
+         ☐ Trash can
+         ☐ Single-button mouse
+         ☐ Icons for everything, windows for directories
+         ☐ Drag and drop!!
+       ☐ Supported pre-emptive shceduling so it could run many programs at once!
+         ☐ Remember that CP/M, MS-DOS and others did not have this! Only Unix did, but it was only starting to be updated for microprocessors. (Unix also didn't have support for GUIs)
+       ☐ Supported virutal memory with segmentation + swapping!
+         ☐ 24-bit virtual addresses: 7 bits (segment number) + 17 (offset). (Total virtual address space 16 MB, while physical RAM was 2MB)
+       ☐ Had its own filesystem
+    ☐ Lisa Computer
+      ☐ The Lisa was released in 1983
+        ☐ 1MB of RAM
+        ☐ Price: 10,000 (30,000 today)
+        ☐ Commercial failure
+    ☐ Macintosh
+      ☐ Apple realized they had to lower the cost
+      ☐ So they designed a new computer: the Macintosh, with lesser components (128KB of RAM vs Lisa's 1MB for example)
+    ☐ Mac OS
+      ☐ In part because of the smaller memory footprint, the Mac OS did not have the niceties of Lisa:
+        ☐ No multitasking
+        ☐ No MMU / no memory protection
+        ☐ No user/kernel mode! Everythin ran in same mode!
+      ☐ But, it still had the GUI (with improvements over Lisa's)
+    ☐ Macintosh computer:
+      ☐ Released in January 1984, announced by a Super Bowl commercial directed by Ridley Scott
+      ☐ Cost: $2,495
+      ☐ Like the Lisa, the Macintosh did not do well commercially. It was slow, had no hard drive, no fan, limited software.
+        ☐ All software had been written for text-based interface, so it would be a huge challenge to rewrite them for a GUI
+        ☐ But the GUI had a huge impact on future UI deisgn
+      ☐ Jobs and Wozniak resigned from Apple
+      ☐ 1986: The faster Mac Plus comes out. Becomes a hit with creative professionals
+    ☐ Susan Kare:
+      ☐ Employee #10 at Apple
+      ☐ Designed the icons, symbols, typefaces for the Mac UI
+        ☐ Trash can, dog-eared paper icon, cursor, Command key, etc.
+      ☐ Later went to Microsoft and worked on Windows 3.0, then IBM, Facebook, Pinterest, others
+      ☐ Pioneer of the graphical user interface
+ ☐ 1985: Windows
+   ☐ Designed to run on top of MS-DOS
+   ☐ MS-DOS was still the OS, Windows was just an executable that provided a GUI
+   ☐ Only needed an 8088 processor and 256k RAM
+   ☐ Provided a GUI with (tiled) windows and mouse support
+   ☐ Different business model thatn Mac: Windows only sold OS, not a whole machine. And the OS was compatible with many different computers/brands
+   ☐ Problems:
+     ☐ Slow
+     ☐ Limited software compatibility
+     ☐ did not come pre-installed like Mac did
+   ☐ (Early) Mac vs. Windows
+     ☐ Mac: OS build from scratch | Windows: built on top of MS-DOS. Not a standalone OS
+     ☐ MAC: OS bundled with Mac computers only ($2,495) | Windows: could be bought for $99 for MS-DOS machines
+     ☐ MAC: GUI (WIMP paradigm) | Windows: More primitive form of GUI. Tiled windows only
+     ☐ MAC: set the standard for GUI | Windows: laid groundwork for 90s Windows, which would dominate the OS field for personal computers
+   ☐ "Inspired" by the Mac
+     ☐ Apple complains that Microsoft is coopying their idea. But Microsoft threatens to stop developing Word for Mac, a very popular product
+     ☐ 1985: Sculley (Apple CEO) signes deal with Gates as follows
+     ☐ In exchange for Microsoft continuing to work on Word for Mac, Microsoft revieces
+       ☐ a non-exclusive, worldwide, royalty-free, perpetual, nontransferable license to use [parts ofthe Mac technology] in present and future software programs, and the license them to and through third parties for use in their software programs
+     ☐ A huge coup for Microsoft
+   ☐ Windows 2.0
+     ☐ Overlapping windows. Icons. Keyboard shortcuts. Word and Excel
+     ☐ Protected mode, Cooperative multitasking
+       ☐ Mac got cooperative multitasking with System 5, released just a couple months before
+   ☐ Look and Feel:
+     ☐ 1988 Apple files lawsuit accusing of copyright violation. Known as the "look and feel" lawsuit
+     ☐ Court ruled that apple could not patent the idea of a GUI, nor the desktop metaphor because they were either not invented by Apple, or they were the only way to express and idea
+       ☐ And Apple had also licensed elements of the GUI to Microsoft
+     ☐ Gui becomes open source
+   ☐ Windows 3.0
+     ☐ 1990, $3 million USD release party
+     ☐ total overhaul of GUI. Emphasis on icons for file, instead of simple list. Improved multitasking, customizability of appearance (desktop picture, etc.). Better memory use.
+     ☐ Huge success
+       ☐ Cost was $149 compared to Mac OS which could only be used on an expensive Mac
+       ☐ First big success of a GUI-based OS
+       ☐ Software industry starts coalescing around Windows
+     ☐ Microsoft becomes first software company to reach $1 billion revenue in a single year
+
+
 
 The Process:
   ☐ Direct Execution -> allow one process to run until it's done
@@ -721,8 +920,432 @@ Paging:
         ☐ Upon each virtual memory reference, we check the TLB to see if the requested translation is there. If so, we can use it without consulting the page table
       ☐ TLB:
         ☐ If the TLB holds the translation for the VPN (TLB hit), we can use the TLB entry to get the page frame number
-        ☐ If the TLB does not hold the translation (TLB miss), the hardware accesses the page table to get the translation.
+        ☐ If the TLB does not hold the translation (TLB miss), the hardware accesses the page table to get the translation, adds to TLB, and retries
           ☐ Misses are expensive, so we want to avoid them as much as possible
+        ☐ How to make TLB fast?
+          ☐ Use associative memory (special hardware)
+          ☐ Regular memory
+            ☐ Lookup by address
+          ☐ Associative Memory
+            ☐ Lookup by contents
+            ☐ Lookup in parallel
+          ☐ See lecture 6 slide 40 for diagram
+        ☐ TLB size
+          ☐ Associative memory is very expensive
+          ☐ Therefore, TLB small (64 - 1,024 entries)
+          ☐ Want TLB hit-rate close to 100%
+        ☐ TLB hitrare and locality
+          ☐ Want TLB hit rate close to 100%
+          ☐ To do this, try to take advantage of locality
+          ☐ Temporal Locality
+            ☐ An instruction or data item that has been recently accessed will likely be re-accessed soon in the future
+          ☐ Spatial Locality
+            ☐ If a program accesses memory at address x, it will likely soon access memory near x
+        ☐ See accessing an array example in Lectur 7 around slide 50
+      ☐ Revisiting Process Switching
+        ☐ Suppose:
+          ☐ Process P1 is running
+          ☐ Entry (pageno, frameno) in TLB
+          ☐ Switch from P1 to P2
+          ☐ P2 issues virtual address in page pageno
+        ☐ P2 accesses P1's memory!
+        ☐ Or unable to distinguish between P1 and P2 mapping
+        ☐ Solution 1: Add valid bit/column to TLB table. Invalidate (set valid column to 0) all TLB entries. That way, new entries that have the same pageno as invalid entried, there is a distinction between processes
+        ☐ Solution 2:
+          ☐ Add process identifieer to TLB entries
+            ☐ Match = match on pid AND match on pageno
+            ☐ :( makes TLB more complicated and expensive
+          ☐ Process switch
+            ☐ Nothing to do
+            ☐ Cheaper
+          ☐ All modern machines have this feature
+      ☐ Cache replacement:
+        ☐ As with any cache, TLB will become full at some point
+        ☐ How to decide which entry to be replaced with new one?
+          ☐ Goal: to minimize miss rate
+          ☐ Main idea: take advantage of locality
+          ☐ See some later notes
+    ☐ Page table sizes:
+      ☐ Space problem: Page tables can get large
+      ☐ Dealing with large virtual address spaces
+        ☐ 4kB size pages:
+          ☐ Typical value for page size; normally, this value is given as part of the problem statement, or you'd have enough information todeduce it.
+          ☐ 4kB size pages means 12 big page offset:
+            ☐ Page size = 2^offset Bytes.. Why?
+              ☐ Every byte needs to have an address and
+              ☐ We can represent 2^offset addresses using offset bits
+              ☐ Therefore, Page size = 4KB = 4 * 1024B = 2^2 * 2^10 = 2^12, so offset has 12 bits
+        ☐ REVISIT QUIZ AT END OF LECTURE 6
+      ☐ How to make Page Table smaller?
+        ☐ Big pages
+          ☐ Advantage: easy to implement
+          ☐ Disadvantage: Larger pages have higher internal fragmentation
+          ☐ Most Systems use 4KB or 8KB pages in common case
+        ☐ Segmentation + Paging
+          ☐ Divide address space into segments (code, heap, stack)
+          ☐ Segments can be variable length
+          ☐ Divide each segment into fixed-sized pages
+          ☐ Implementation:
+            ☐ Each segment has a page table
+            ☐ Each segment track base (physical address) and bounds of page table for that segment
+            ☐ SEE QUIZ LECTURE 7 SLIDE 37!!
+          ☐ Advantages of Segmentation + Paging:
+            ☐ Supports sparse address spaces
+              ☐ Significant memory savings: Decreases size of page tables
+                ☐ Unallocated pages between stack and heap no longer take ups space in page table
+            ☐ Sharing
+            ☐ No external fragmentation
+          ☐ Disadvantages of Segmentation + Paging:
+            ☐ Potentially large page tables (for each segment)
+            ☐ Must allocate each table contiguously
+              ☐ Can get tricky with large page table
+        ☐ Multi-level page tables
+          ☐ turns the linear page table we've seen so far into a tree structure
+          ☐ 2-level Page Table:
+            ☐ Chop up the page table into page-sized units
+            ☐ If an entire page of page-table entries is invalid, don't allocate that page of the page table at all
+            ☐ to track if a page of page table is valid, use a page directory (new structure)
+              ☐ Essentially keeps track of which "page-sized units" are valid/invalid
+              ☐ See lecture 7 slide 44
+            ☐ Virtual addresses are no longer of structure, [VPN|Offset], they are instead [PageDirectoryIndex|PageTableIndex|Offset]
+            ☐ Why Useful?
+              ☐ For sparse address spaces:
+                ☐ Most address spaces are sparsely populated
+                ☐ One-level page table:
+                  ☐ Need page table for entire address space
+                ☐ Two-level page table:
+                  ☐ Need top-level page table for entire address space
+                  ☐ Need only second-level page tables for populated parts of the address space
+            ☐ Are two levels enough?
+              ☐ Need top-level page table (page directory) for entire address space
+              ☐ Assume size of second-level page table == size of page
+                ☐ Why? Easy to allocate
+              ☐ Problem: Top-level can get too large if large address space (64 bits)
+              ☐ Solution (?): More levels
+            ☐ More Levels: The Price to be paid
+              ☐ Each level adds another memory access
+              ☐ N-level page table
+                ☐ 1 memory address -> N + 1 memory accesses (N for page table + 1 for phys addr)
+              ☐ But, TLB still works
+                ☐ If TLB hit, 1 memory access -> 1 memory accesses
+                ☐ If miss, 1 memory access -> N + 1 memory accesses
+              ☐ -> TLB hit rate must be very high (99%+)
+      ☐ Demand Paging
+        ☐ What if "out of memory"
+          ☐ Need to get rid of one or more processes, store them temporarily on disk
+            ☐ this is called swapping
+        ☐ Process Switch to a swapped process?
+          ☐ Latency can be very high
+          ☐ Need to read image from disk
+          ☐ Better solution: Demand paging since not all of a process needs to be in memory
+        ☐ Demand Paging: Main reason:
+          ☐ Virtual address spaces >> Physical Address space
+            ☐ No machine has 2^64 bytes
+            ☐ Why such large virtual address space?
+            ☐ Convenient for programmer
+            ☐ Don't have to worry about running out
+        ☐ Deman Paging Benefits:
+          ☐ shorter processes startup latency
+            ☐ Can start process without all of it in memory
+            ☐ Even 1 page suffices
+          ☐ Better use of main memory
+            ☐ Program often does not use certain parts
+              ☐ E.g., error handling routines
+            ☐ Program often goes through different parts
+              ☐ E.g., initialization, computation, termination
+        ☐ If the program is not in memory, then where is it?
+          ☐ Part of it is in memory, (typically) all of it in on idsk
+            ☐ In a special partition called the Backing Store
+        ☐ Swapping vs Demand Paging:
+          ☐ Swapping = all of a program is in memory OR all of program is on disk
+          ☐ Demand Paging = part of program is in memory
+        ☐ Demand Paging Mechanism High Level:
+          ☐ What if program needs to access part only on disk
+            ☐ This is called a page fault
+          ☐ Program is suspended
+          ☐ OS runs, gets page from disk
+          ☐ Program is restarted
+            ☐ This is called page fault handling
+        ☐ Demand Paging Issues:
+          ☐ How to discover a page fault?
+          ☐ How to suspend a process?
+          ☐ How to get a page from disk?
+            ☐ and how t ofind a free frame in memory?
+          ☐ How to restart process?
+          ☐ Q: Compact the page table?
+            ☐ We saw that a page table has many entries. Each entry has a valid bi, indicating whether that entry corresponds to a page that is actually allocated in memory or not.
+            ☐ Q: Why have entries for invalid pages? Why not just have entries for the valid pages?
+              ☐ Remember that the first part of a virtual address is the VPN. To find the entry for this VPN in the page table (to get the PFN), we simply add the page table starting address to the VPN * sizeof(entry) to obtain the entry. If the page table only had valid pages (and thus its size would constantly be constantly be in flux), it wouldn't be this simple
+        ☐ More on Demand Pagign issues:
+          ☐ 1. Discover Page Fault:
+            ☐ Idea: Use the valid bit in page table
+            ☐ Without demand paging:
+              ☐ Valid bit = 0, then invalid
+              ☐ Valid bit = 1, then valid
+            ☐ With Demand paging:
+              ☐ Valid bit = 0, then page is invalid OR page is on disk
+              ☐ Valid bit = 1, then page is valid AND page is in memory
+              ☐ OS needs additional table: invalid/on-disk?
+          ☐ 2. Suspending the Faulting Process
+            ☐ Idea: Trap into the OS
+              ☐ Invalid bit access generates trap
+              ☐ Save process information in PCB when trapping into the OS
+          ☐ 3. Getting the Page from Disk
+            ☐ Idea: OS handles fetch from Disk
+              ☐ Assume (for now) there is at least one free frame in memory
+              ☐ Allocate a free frame to process
+              ☐ Find page on disk
+                ☐ OS needs to remember the swap space in page-sized units
+                ☐ Need an extra table for that in OS
+              ☐ Get disk to transfer page from disk to frame (slow)
+              ☐ Since above is slow, while the disk is busy:
+                ☐ Shouldn't waste CPU cycles
+                ☐ Invoke scheduler to run another process
+                ☐ When disk interrupt arrives
+                  ☐ Suspend running process
+                  ☐ get back to page fault handling
+                ☐ Why OK to go through OS (and not in hardware)?
+                  ☐ Disk is so slow that it makes the latency of handling this in OS
+              ☐ Completing Page Fault Handling
+                ☐ Pagetable[pageno].frameno = new frameno
+                ☐ Pagetable[pageno].valid = 1
+                ☐ Set process state to ready
+                ☐ Invoke scheduler
+          ☐ 4. When Process Runs Again
+            ☐ Idea: Restarts the previously faulting instruction
+            ☐ Process now finds
+              ☐ Valid bit to be set to 1
+              ☐ Page in corresponding frame in memory
+              ☐ Note: different from context switch, which continues with the next instruction
+        ☐ Page-replacement Policies:
+          ☐ OPT
+            ☐ An Optimal Algorithm
+            ☐ Replace the page that will be referenced the furthest in the future
+            ☐ Provably optimal
+            ☐ Can't implement (can't predict the future)
+            ☐ A basis of comparison for other algorithms
+          ☐ Random
+            ☐ Random page is replaced
+              ☐ Easy to implement
+              ☐ But does not take advantage of spatial/temporal locality
+          ☐ FIFO
+            ☐ Oldest page is replaced
+              ☐ Age = Time since brought into memory
+            ☐ Easy to implement
+              ☐ Keep a queue of pages
+              ☐ Bring in a page: stick at the end of the queue
+              ☐ Need replacement: pick head of queue
+            ☐ Fair
+              ☐ All pages recieve equal residency
+            ☐ But does not take into account "hot" pages that may always be needed
+          ☐ LRU
+            ☐ Least Recently Used
+            ☐ Cannot look into the future, but can try to predict future using past
+            ☐ Replace least recently accessed page
+              ☐ With locality, LRU approximates OPT
+              ☐ But harder to implement, must track which pages have been accessed
+              ☐ But doesn't handle all worklaods well
+                ☐ Example: Large array scans that repeat. popular in DBMS
+            ☐ LRU approximation with hardware support
+              ☐ Use a reference bit:
+                ☐ bit in page table
+                ☐ hardware sets bit when page is referenced
+              ☐ Periodically
+                ☐ Read out and store all reference bits
+                ☐ Reset all reference bits to zero
+              ☐ Keep all reference bits for some time
+                ☐ the more bits kept, the better approximation
+              ☐ replacement
+                ☐ page with smallest value of reference bit history
+        ☐ TLB replacement policies
+          ☐ TLB can also become full
+          ☐ TLB replacement policies are similar to page replacement policies, though they are often more simplifies and appriximations.
+          ☐ Implementations have to be very fast (since the TLB must be very fast), and are typically done in hardware to avoid going into the OS
+
+
+
+
+
+
+
+
+
+
+
+The Disk:
+ ☐ I/O Devices
+   ☐ Key Concepts:
+     ☐ OS role for integrating I/O devices in systems
+     ☐ Polling, Interrupts, Drivers
+     ☐ Notion of "permanent" Storage
+     ☐ File system interface
+     ☐ Disk Management for HDDs
+       ☐ Disk Allocation, Scheduling, Optimizations
+   ☐ How should I/O be integrated into systems
+     ☐ I/O = Input/Output
+     ☐ For computer systems to be interesting, both input and output are required
+     ☐ Many, many I/O devices
+   ☐ System architecture: 
+     ☐ Buses = data paths that enable information exchange between CPU, RAM and I/O devices
+     ☐ PCIe = Peripheral Componenet Interconnect Express
+     ☐ DMI = Direct Media Interface
+     ☐ USB = Universal Serial Bus
+     ☐ eSATA = external SATA
+       ☐ SATA = Serial ATA
+       ☐ ATA = the AT attachment, in reference to providing connection to the IBM PC AT
+     ☐ CPU is connected to main memory via memory bus
+     ☐ Some devices connected to CPU via I/O bus (PCI)
+     ☐ Peripheral bus connects other, slower devices (SCSI, SATA, USB, etc.)
+     ☐ The faster a bus, the shorter it should be.
+     ☐ Also, components needing highest performance (e.g., graphics card) are closest to CPU
+   ☐ Basics of a device:
+     ☐ A device has two important components:
+       ☐ The hardware interface (protocol) that it presents to the system, which allows the OS to control its operation
+         ☐ Basics of a protocol: Consists of three registers
+           ☐ a status register, which can be read to see the current status of the device
+           ☐ a command register, to tell the device to perform a certain tasl; and
+           ☐ a data register, to pass data to or get data from the device
+         ☐ By reading and writing these 3 registers, the OS can control device behavior
+       ☐ The internal structure. E.g., hardware chips, memory, simple CPU firmware (software within a hardware device)
+     ☐ Typical OS interaction with a device:
+       ☐ 1. Wait until device is not busy
+       ☐ 2. starts device and executes the command
+       ☐ 3. wait until device is done with request
+       ☐ In this approach, the OS repeatedly checks the status register until the device is ready to receive a command, and then until the device is done executing the command. This is known as polling the device.
+       ☐ Polling is inefficient (wastes CPU cycles). that's why we will see some better ways to check the status
+     ☐ Interrupts
+       ☐ Put process requesting I/O to sleep
+       ☐ Context switch to a different process
+       ☐ When I/O finishes, wake sleeping process with an interrupt
+       ☐ Remember: same interrupt mechanism for demand paging
+       ☐ Interrupt vs Syscall:
+         ☐ Interrupt:
+           ☐ generated by hardware to initiate a context switch
+         ☐ Syscall: generated by process, to request functionality from kernel mode. Also, initiates a context switch
+       ☐ See Lecture 9 slide 45 for example
+       ☐ Advatange: No wasted CPU cycles
+       ☐ Disadvantage:
+         ☐ Expensive to context switch
+           ☐ Polling can be better for fast devices
+     ☐ Device drivers
+       ☐ The OS should be device-netural; it should not contain details of device interactions in its subsystems
+         ☐ E.g., the filesystem should not need to know the specifics of what kind of disk it is writing to or reading from
+       ☐ we encapsulate specifics of device interation in a device driver
+       ☐ Since device drivers are needed for any kind of device you might plug into your system, they represent a huge chunk of kernel code
+       ☐ Over 70% of the Linux kernel is device drivers
+         ☐ So when we say that an OS has millions lines of code, it really does
+     ☐ Hard drives
+       ☐ Permanent Sotrage Media
+         ☐ Main memory - not suitable
+         ☐ Battery-backed memory
+         ☐ Nonvolatile memory
+           ☐ Flash SSDs
+           ☐ 3Dxpoint SSDs (released in 2018)
+         ☐ Hard Disks (HDDs)
+         ☐ Tapes
+       ☐ The main form of persistent storage
+       ☐ File system technology is based on their behaviour
+     ☐ Interface
+       ☐ A drive consists of a number of sectors (512-byte blocks) that can be read/written. We can view the drive as an array of sectors
+       ☐ A single 512-byte write is atomic (will complete in its entirety or will not complete at all). If a larger write occurs and power is lost, not all the write may compelte
+     ☐ Disk geometry
+       ☐ A hard drive is made up of one more platters: circular, hard surfaces on which data is stored by applying magnetic charges
+         ☐ Each platter has two sides or surfaces
+       ☐ Platters are bound together around a spindle, which is connected to a motor that can spin the platters around, at a constant rate (rotaitons per minute, or RPM)
+         ☐ A typical RMP is 7,200
+       ☐ Each surface of a platter has thousands of concentric circles called tracks on which data is stored. Each track has a number of sectors
+       ☐ Reading and writing from a surface is performed by a disk head (one head per surface); the heads are attached to a disk arm, which moves across the surface to position the head over the desired track
+       ☐ REVIEW EXAMPLES ON LECTURE 9 SLIDE 90ish
+    ☐ I/O Time
+      ☐ head selection (to select platter)
+      ☐ seek time (depends on disk; time to find track?)
+      ☐ rotational delay (depends on disk)
+      ☐ transfer time (depends on file size)
+    ☐ Disk Interface
+      ☐ Accessible by sector only
+        ☐ ReadSector
+        ☐ WriteSector
+      ☐ Logical_sector_number
+        ☐ Platter
+        ☐ Cylinder or track
+        ☐ Sector
+    ☐ Flash-based SSDs
+      ☐ No moving parts! No magnet problem!
+      ☐ Built out of transistors, like memory and CPU but can retain data without power
+    ☐ Bit storage
+      ☐ In a flash chip, one or more bits are stored int oa single transistor
+        ☐ In a single-level cell (SLC), a single bit is stored
+        ☐ Multi-level cell (MLC): Two bits, encocded into different levels of charge (00, 01, 10, 11: low, medium-low, medium-high, high)
+        ☐ Triple-level cell (TLC): 3 bits per cell
+    ☐ Flash chip organization
+      ☐ Flash chips are organized into banks (or planes)
+      ☐ Each bank consists of a large number of block of size 128KB or 256 KB
+      ☐ Each block contains a large number of pages of size 4KB
+    ☐ Low-level operations
+      ☐ Reading a page
+        ☐ An SSD is a random access device. It can read any page in about the same amount of time regardless of location (Unlike a regular hard drive!)
+      ☐ Erase a block
+        ☐ Erase destroys the contents of a block (so if we want to write to a specific page in a block, must first erase the entire block before writing) by setting each bit to the value 1
+          ☐ Erasing is the first step in actually writing anything to the disk
+        ☐ Expensive: takes a few milliseconds
+      ☐ Program a page
+        ☐ Once a block is erase, the program command can change some of the 1's in a page to 0's
+          ☐ That is, you must erase before you can write (Unusual)
+          ☐ the only way to change bits to 1 is to erase. Prgramming a page can only flip it to 0
+        ☐ Takes 100s of microseconds
+      ☐ Example (Lecture 10 slide 60ish) Summary
+        ☐ 4 8-bit pages, want to write to page 0. need to erase the entire block, setting all bits across all pages to 1, then we can program page 0.
+          ☐ Note that if we wanted t okeep the data in the other three pages, we would have had to put them in memory (e.g.) and then write their contents back, along with sector 0
+      ☐ Reading and writing:
+        ☐ Reading is fast and can greatly exceed the random read performance of regular drives
+        ☐ Writing is expensive: we have to erase the entire block (first moving any important data to another location) and then program it
+          ☐ Frequent program/erase cyceles can wear out the flash chips
+      ☐ Reliabaility
+        ☐ Mechanical hard drives can fail for a variety of reasons
+        ☐ Flash chips are pure silicon. But, they can wear out.
+        ☐ When a flash block is erased/programmed, it slowly accrues a little bit of extra charge
+        ☐ Over time, as the extra charge builds up, it becomes increasingly difficult to differentiate between a 0 and a 1
+          ☐ at a certain point, the block becomes unusable 
+        ☐ the typical lifetime of a block is currently not well known...
+        ☐ SLC chips are rated at 100,000 P/E cycles. MLC 10,000.
+        ☐ But research has shown lifetimes are likely much longer
+      ☐ SSD structure
+        ☐ An SSD consists of some number of flash chips, volatile memory (for aching, e.g.) and some control logic
+        ☐ Control logic includes the flash translation layer (FTL). It takes read and write requests on logical blocks and turns them into low-level read, erase and program commands on the device.
+      ☐ Direct-mapped FTL
+        ☐ In a simple FTL approach we can call direct mapping:
+          ☐ A read to a logical page N maps to a read of the physical page N
+          ☐ A write to logical page N maps to a read of the block containing the physical page N, then erase of the block, and then programming of the block.
+        ☐ Such a direct mapping approach has a lot of problems
+          ☐ Very bad performance (costly to write).
+          ☐ Even worse reliability: data that is frequently updated, such as file system metadata, would cause the same block to be erased and programmed over and over, leading to the chip wearing out!
+      ☐ Log-based FTL
+        ☐ Most FTLs today are log structured
+          ☐ Upon a write to logical block N, the device appends the write to the next free spot in the currently-being-written-to block.
+          ☐ A mapping table stores the physical address of each logical block in the system
+        ☐ **See example in Lecture 10**
+          ☐ First write: erase the whole first block, then write to first page
+          ☐ For the subsequent writes, since the whole block was already erased, no more erases are needed to write pages in this block.
+            ☐ Pages have states, wither Valid, Empty, or Invalid
+            ☐ Once block erased, state changes to E; pages can only be used for writing if state is E (not invalid)
+            ☐ Garbage:
+              ☐ Writing to logical blocks a second time, after being used once, simply stores the desired content in the next free physical pages, then updates the mapping table to point the logical address to the new contents
+              ☐ Now the old contents are garbage, that is they are the old versions of the logical blocks and are no longer referenced in the mapping table
+              ☐ Because of the log-structured nature of an SSD, overwriting data creates garbage blocks (or dead blocks). The device must reclaim these to make space in a process known as garbage collection
+      ☐ Garbage Collection:
+        ☐ Basic process:
+          ☐ Find a block with one or more garbage pages
+          ☐ Read in the live (non-garbage) pages from that block
+          ☐ Write them somewhere else ("to the log").
+          ☐ Reclaim the entire block for writing
+          ☐ See example in Lecture 10
+        ☐ can be expensive (reading, rewriting).
+        ☐ The ideal candidate for reclamation is a block of only dead pages (then there is no need to move data)
+        ☐ Many modern drives add extra flash capacity to the drive so that garbage collection can be delayed and done in the background (like when the drive is less busy)
+        ☐ This is known as overprovisioning
+        ☐ Log-based FTL:
+          ☐ Since erases are only required once in a while in this scheme, and the "read-modify-write" pattern of the direct-mapping approach is avoided completely, the log-based FTL greatly improved performance.
+          ☐ It also improve reliability, since writes are spread across all pages
 
 
 
@@ -741,3 +1364,19 @@ Paging:
 
 
 
+
+
+
+ ☐ File API
+   ☐ The file:
+     ☐ A linear array of bytes, each of which can be read/written
+       ☐ could contain any data. the filesystem does not know; only the application knows what the data means
+       ☐ Has a low-level name, known as the inode number
+     ☐ Creating files:
+       ☐ A file is created by calling the open() system call and passing the 0_CREAT flag
+       ☐ The call returns a file descriptor: an integer for that process that you can use read/write to the file
+         ☐ File descriptors are managed on a per-process basis
+     ☐ Reading and writing files:
+       ☐ If we were at the terminal, we might use cat to show the contents of a file
+       ☐ How does cat access a file? we can find out by using the strace command, which traces the system calls of a program.
+         ☐ 

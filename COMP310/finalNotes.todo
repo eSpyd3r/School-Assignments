@@ -324,7 +324,378 @@ OS HISTORY:
        ☐ First big success of a GUI-based OS
        ☐ Software industry starts coalescing around Windows
      ☐ Microsoft becomes first software company to reach $1 billion revenue in a single year
-
+ ☐ 1991: Linux
+   ☐ Microcomputer OS's
+     ☐ Primitive compared to Unix:
+       ☐ Single-user, single-tasking
+       ☐ Basic filesystems, sometime flat.
+       ☐ Not many utilities
+     ☐ But they worked on microcmputer's, unlike Unix
+   ☐ Unix Advantages
+     ☐ Portability: since it was written in C.
+     ☐ Modifiability: since it was written in C.
+     ☐ Open Source
+     ☐ Rich set of development tools: easy to use for developers
+     ☐ worked on minicomputers: still widely used in businesses and acadmeic through the 70s and 80s
+   ☐ Unix in the 1980s
+     ☐ We talked about Unix v6, realeased in 1976, which iwas licensed to commercial users.
+     ☐ New versions continued to be realeased in the 70s/80s
+     ☐ As part of the license, the licensee could add their own features to Unix and resell it to end-users
+   ☐ Unix variants
+     ☐ Some of the most popular Unix variants included:
+       ☐ System V: A commercial form of Unix by AT&T
+       ☐ BSD Unix (Berkeley): vi editor, TCP/IP networking
+       ☐ Open Systems (not based on AT&T code)
+       ☐ Xenix (Unix for microcomputers, by Microsoft)
+     ☐ By 1991, there were over 30 commercial versions of Unix
+   ☐ Unix wars
+     ☐ Each vendor tried to lock in their customers with custom added features and APIs
+       ☐ Software written for one varient would not work on another
+       ☐ Customers started having problems with compatibility
+     ☐ The struggle between these vendors was called the Unix wars
+   ☐ POSIX
+     ☐ 1988: IEEE introduces the Portable OS Interface (POSIX) specification, a "lowest common denominator" API that could be easily implemented on popular Unix variants.
+     ☐ Many of today's OS's are POSIX-compliant:
+       ☐ macOS (fully certified)
+       ☐ Android, Linux (mostly)
+       ☐ Windows (through the WSL)
+   ☐ Factors in the devline of Unix:
+     ☐ Compatibility problems between the different variants
+     ☐ High license fee: $400+, depending on license type, vs $149 for Windows 3.0
+     ☐ Rise of microcomputers (PCs): many of which ran Windows and had extensive software catalogs. Minicomputers became less prevalent
+   ☐ MINIX
+     ☐ MINIX (mini-Unix): a Unix-like OS created in 1987 for $69. Microkernel architecture
+     ☐ Created to teach OS design
+     ☐ Creator turned down requests to expand the OS so that its teaching value was not diminished
+       ☐ Source code was available, but under a restrictive license (modification/redistribution)
+   ☐ Linux
+     ☐ Linus Torbalds, Finnish CS student makes a post on the comp.os.minix newsgroup
+     ☐ Announces a "hobby" Unix-like kernel
+       ☐ Note that "Linux" typically refers to the Linux kernel packaged with open-source system software and libraries (e.g., the bash shell, gcc compiler, etc.)
+   ☐ Linux vs MINIX
+     ☐ Linux was based on GNU tools/C compiler and MINIX kernel. But had a monolithic kernel as opposed to MINIX.
+     ☐ Linux was distributed under GPL license: anyone can run, study, share, modify
+       ☐ Torvalds was very open to feedback and collaboration with others
+   ☐ X Window System
+     ☐ A framework for a GUI environment for Unix-like OS's
+     ☐ Open source license
+     ☐ 1994: Ported to Linux as its first GUI. Increased popularity of Linux
+   ☐ Linux vs Unix
+     ☐ As the 1990s progressed, interest begins to coalesce around Linux
+       ☐ Its free, open-source and GPL license allowed companies to modify it and re-sell it.
+       ☐ Linux development took place through email and newsgroups, unlike prior OS's
+       ☐ IBM, Intel and other big companies began to adopt it
+     ☐ Today, Linux is the leading Unix-like OS
+   ☐ Linux distros
+     ☐ Independent, community-driven Linux distributions
+       ☐ Debian (emphasis on free software).
+         ☐ Ubuntu
+       ☐ Arch Linux
+       ☐ Red Hat (originally commercial)
+       ☐ SUSE (originally Comercial)
+       ☐ Slackware
+   ☐ Today:
+     ☐ Linux kernel has 13 million lines of code
+       ☐ 5 patches contributed per hour on average
+     ☐ Significant protion of code now contributed by:
+       ☐ Commercial Linux distributors
+       ☐ Consumer electronics manufacturers
+       ☐ Chip vendors
+     ☐ 15-20% from independednt developers (more than any company)
+ ☐ 1989-1995: NeXTSTEP
+   ☐ NeXT
+     ☐ 1985: Steve Jobs resigns from Apple
+     ☐ Immediately starts a new computer company, hires several important Apple employees
+     ☐ Recruits Graphic designer Paul Rand to create a brand identitify for 100,000 dollars
+     ☐ They device to make a computer workstation
+       ☐ A workstation is a computer designed for scientific applications. it has more powerful (and expensice) hardware than a PC
+     ☐ They release the NeXT computer in 1989 at a price of $6500
+       ☐ Aimed at the higher education market
+   ☐ NeXTSTEP
+     ☐ The NeXT computer ran the NeXTSTEP operating system, a Unix-like OS.
+     ☐ It was created by a team led by Avie Tevanian, one of the Mach kernel engineers.
+     ☐ Based on the MACH kernel and BSD Unix
+     ☐ Written in Objective-C
+   ☐ Mach
+     ☐ A kernel developed at Carnegie Mellon
+       ☐ Based on BSD Unix
+       ☐ Sponsored by DARPA
+       ☐ Goal was to support OS research into distributed parallel computing
+     ☐ Mach 3.0: microkernel
+   ☐ Objective-C
+     ☐ An OOP language that added Smalltalk-style messaging to C (Superset of C)
+     ☐ Licences by NeXT and used for their OS and UI libraries
+   ☐ NeXTSTEP UI
+     ☐ Dock and shelf
+     ☐ Better drag and drop
+     ☐ Real-time scrolling, window-dragging
+   ☐ NeXT users
+     ☐ Sold to students, universities and researchers. Kept switching target audience
+     ☐ Used by Sir Tim Berners-Lee at CERN to create first web server + web browser, and id software for Doom + Quake
+   ☐ The end of NeXT
+     ☐ 50,000 machines sold in total
+       ☐ 1993: stopped making hardware. Focused on OpenStep (API)
+       ☐ OS attracted interest from CS researchers.
+       ☐ 1996: stopped updating OS except to port to new architectures 
+   ☐ What's NeXT
+     ☐ NeXT acquired by Apple in 1997. Steve Jobs becomes interim CEO
+     ☐ NeXT vice-presidents replace Apple VPs on new board
+ ☐ 1995-2000: Windows 9x
+   ☐ Problems with Windows 3.0
+     ☐ Based on MS-DOS
+     ☐ 16-bit architecture
+       ☐ 16 bit memory address, 2^16 addresses. 65,536 (64KB) in virtual address space
+     ☐ Unix had multitasking, better networking, etc. Much superior to Windows. Microsoft was worried. they needed a "Unix killer."
+   ☐ Windows NT
+     ☐ Same UI as Windows 3.0, but new kernel written from scratch -- no longer reliant on MS-DOS.
+       ☐ 32-bit architecture (4GB virtual address space)
+       ☐ Multi-user, pre-emptive multi-tasking, networking
+       ☐ Hybrid kernel (influenced by Mach)
+       ☐ NTFS file system instead of FAT (journaling, ACLs, encryption, ...)
+     ☐ Positioned as "higher-end" OS compared to Win 3.0
+   ☐ Reception - Windows NT
+     ☐ Much improved architechure. But:
+       ☐ Much higher system requirements than Win 3.0
+       ☐ 32-bit software apps very sparse
+       ☐ OS very slow
+     ☐ Sold about 300,000 copies in first year.
+       ☐ Would be updated throughout 90s to keep track with regular Win: Windows NT 3.5, 4.0, 2000. Targeted to businesses
+   ☐ Windows 95
+     ☐ Consumer-oriented release following up from Win 3.
+     ☐ Merged MS-DOS and Windows Products
+     ☐ Lower system reqs than Win NT (but less features)
+     ☐ 32-bit, pre-emptive multitasking
+       ☐ Apps could address up to 2GB of RAM (OS was other 2GB)
+       ☐ But only supported 512MB physical RAM
+     ☐ Updated GUI
+       ☐ Desktop metaphor
+       ☐ Start button + taskbar
+     ☐ "Plug-and-play"
+   ☐ Reception - Windows 95
+     ☐ Major commercial success. One million copies shipped in first four days. 65 million in first 16 months
+     ☐ Stores held midnight release events
+     ☐ Considered one of the most important products in the PC industry
+     ☐ By end of 1998, Win 95 had 57.4% of desktop OS market. All Windows version: 82%
+   ☐ Why was WIN 95 such a success?
+     ☐ Much easier to use than Win 3:
+       ☐ Boosted directly into GUi (not MS-DOS)
+       ☐ Nicer and easier to use GUI
+       ☐ Much more polished
+       ☐ Better apps due to architectural improvements
+     ☐ Compatibility with big pool of existing software
+     ☐ Plug and play: auto configuration of devices
+     ☐ Win 95 PCs required to ship with sound, speaker, CD-ROM drive for day one multimedia experience
+   ☐ Further Updates:
+     ☐ Windows 98: small update. Positive reception.
+       ☐ Web integration
+     ☐ Windows ME (2000): lots of stability issues
+       ☐ Many users decided to stick with 98
+   ☐ Halloween documents
+     ☐ October 1998: confidential Microsoft memo leaks
+     ☐ Reveals Microsoft is worried about Linux and open-source software
+     ☐ Strategy was to spread FUD (fear, uncertainty and doubt) about open-source software/Linux
+ ☐ 90s Mac OS
+   ☐ Mac OS System 1 released in 1984
+     ☐ Updates in the later 80's introduced a better filesystem, cooperative multitasking.
+   ☐ 1991: System 8. Updated UI. Virtual memory support. 32-bit memory addressing
+   ☐ 1997: Mac OS 8. Multi-threaded Finder. Updated UI again.
+   ☐ IBM+Microsoft vs Apple:
+     ☐ By the late 1980s the IBM PC and its clones were the most popular microcomputers (PC)
+     ☐ Apple tried to launch all kinds of different Mac models at different price points and tech specs. But there were way too many models and it confused their customers
+   ☐ The rise of the clones
+     ☐ In 1995, Apple decided to license the Mac OS (System 7) to other companies, who would pay a license fee and royalty to put Mac OS on their own computers ("clones").
+     ☐ But the clones started to eat into Apple's own profits
+   ☐ Scrapping the Mac OS
+     ☐ Mac OS was stagnating compared to Windows 95/98/NT
+     ☐ Apple needed an OS that could compete, one with pre-emptive multitasking, networking, and other features found in Windows
+     ☐ They decided to completely scrap the Mac OS and simply buy another company's OS
+ ☐ 2001-present Mac OS X
+   ☐ Recall: NeXT acquired by Apple, Steve Jobs becomes interim CEO, NeXT vice-presidents replace Apple VPs on new board
+   ☐ The comeback
+     ☐ Jobs killed the clones
+     ☐ Restructures Apple product line. Simple distinction between consumer and pro line.
+     ☐ Announces partnership with Microsoft, who commits to Office for Mac for five years. Settles dispute over GUI patent infringement. Internet Explorer ships as default browser
+     ☐ Introduces iMac(1998), iPod(2001). Big success. Online store (1997) and retail stores (2001)
+   ☐ MAC OS X
+     ☐ Completely different code than original Mac OS
+     ☐ Build on NeXTSTEP OS (Mac kernel/BSD Unix)
+       ☐ Used Objective-C as main programming language
+       ☐ Kernel repackaged as Darwin and realeased as open-source
+     ☐ New UI with features of both Mac OS + NeXTSTEP
+     ☐ Shipped in March 2001
+     ☐ With the new kernel came important advances Windows NT had that Mac OS was lacking:
+       ☐ pre-emptive multitasking
+       ☐ memory protection
+       ☐ command line interface (original Mac OS was one of few OS's without a shell)
+   ☐ Aqua
+     ☐ New UI: Aqua
+       ☐ Transparency, shadows, animation, anti-alisasing
+       ☐ Dock (from NeXTSTEP)
+   ☐ APFS:
+     ☐ Introduced in 2017. Suceeded HFS +
+     ☐ Optimized for SSDs
+       ☐ Copy-on-write (less wear on flash chips)
+         ☐ Copies are much faster and don't take up space
+       ☐ Uses knowledge of FTL
+     ☐ Actually performs worse on mechanical HDs
+     ☐ Prioritizes user I/O requests over background activity
+     ☐ Snapshots
+     ☐ Full disk encryption
+     ☐ Does not use journaling! Uses redirect-on-write aproach (similar to shadow paging)
+     ☐ User's filesystem automatically converted from HFS+ to APFS on upgrade to macOS 10.13
+ ☐ 2001-present: Windows 5-11
+   ☐ Windows NT
+     ☐ Same UI as regular Windows, but new kernel written from scratch -- no longer relient on MS-DOS
+       ☐ multi-user, pre-emptive multi-tasking, networking, NFTS filesystem
+     ☐ Positioned as a "higher" OS compared to WIN 3.0
+     ☐ Updated throughout 90s to keep track with regular Win: Windows NT 3.5, 4.0, 2000
+     ☐ End goal was to unify Win NT and Win 9x
+   ☐ Windows XP
+     ☐ Their goal of unifying the two different kinds of Windows was accomplished with Windows XP
+     ☐ The new OS was based on the WIN NT architecture, and thus no longer relied on MS-DOS
+       ☐ It also included a refreshed UI and a huge number of other features
+   ☐ Windows Subsystem for Linux
+     ☐ Introduced with Windows 10
+     ☐ Enables Linux binaries to be run by translating Linux system calls to Win NT kernel system calls
+   ☐ Backwards Compatibility
+     ☐ Windows is legendary for backwards ocmpatibility
+       ☐ Win 95 development: software store bought out
+     ☐ "Compabtibility mode"/troubleshooter
+     ☐ Apps for Win NT can still run on Win 11
+     ☐ Much, much, much worse on Mac
+   ☐ Populatiry of Windows
+     ☐ Existing market dominance since 1990s
+     ☐ Enormous hardware compatibility
+     ☐ Comes preloaded on hardware manufactures PCs
+     ☐ Continued development
+     ☐ Games (DirectX)
+   ☐ U.S. v. Microsoft Corp. (2001)
+     ☐ Landmark antitrust case. Part of the "browser wars"
+     ☐ US accused Microsoft of illegal monopoly on web browser market by bundling Internet Explorer with Windows, prevented OEMs from removing it and made deals with ISPs to promote IE over other browsers
+       ☐ This allegedly restricted the market for competing web browsers. Netscape had 80% of web browser marketshare, but was now falling
+     ☐ Microsoft argued that a eb browser was an essential component of an OS
+     ☐ Ruling: Microsoft's dominance of x86 PC market OS's was a monopoly, and Microsoft had used anticompetitive acts to maintain it, including bundling of IE
+       ☐ Microsoft was to be broken up into two companies: one for OS and one for othersoftware
+     ☐ Appeal and settlement: Microsoft breakup overturned, but must offer version of Windows without IE and let OEMs install their own browsers
+       ☐ IE attains 96% of web browser usage share in 2001
+     ☐ Coda: a decade later, IE would fall in rankings to Firefox and then Chrome
+     ☐ Antitrust case brought by European Commission (EU)
+     ☐ Alleged (in part) that Microsoft had abused its dominant position in the desktop PC OS market by integrating Windows Media Player into Windows
+     ☐ Microsoft argued that it provided a benefit to consumers, that they did not need to use it and did not need to pay extra
+     ☐ Ruling: Windows Media Player bundling gave Microsoft an unfair advantage over competing media players. Microsoft ordered to offer a version of Windows without Windows Media Player
+       ☐ So they made Windows XP N (Windows XP Reduced Media Edition)
+     ☐ In 2009: EC announced it would investigate IE bundling
+       ☐ So Microsoft released "Windows 7 E" in Europe (no IE)
+       ☐ And had to provide a selection screen for a default browser, in random order
+     ☐ Goldsetin v. Microsoft Corp (2016)
+       ☐ Terri Goldstein of California alleges an unauthorized Win 10 upgrade caused crashes and slowdowns on her PC, leading to big losses at her travel booking business
+       ☐ Ruling found in favour of Goldstein and ordered Microsoft to pay $10,000 fine
+ ☐ Mobile Operating Systems
+   ☐ Mobile OS's in early 2000s
+     ☐ PalmOS
+     ☐ Windows Mobile
+     ☐ BlackBerry OS
+     ☐ Symbian
+   ☐ iOS
+     ☐ Released in 2007
+     ☐ "iPhone runs OS X"
+       ☐ Based on Darwin kernel and Mac OS
+       ☐ Same (or similar) scheduler, virtual memory and FS subsystems
+   ☐ New UI paradigm
+     ☐ No more desktop
+       ☐ "Post-WIMP"
+       ☐ No more file system! (or really, hidden)
+     ☐ Gesture-based interface called MultiTouch
+       ☐ Home screen, with home button
+   ☐ App store in 2008, the start of a new (heavily restricted) economy
+     ☐ Guidelines:
+       ☐ Safety
+       ☐ Performance
+       ☐ Business
+       ☐ Design
+   ☐ Thoughts on Flash
+     ☐ Adobe Flash was very energy hungry, so in 2010 Steve Jobs announced it wouldn't support Flash
+   ☐ Android
+     ☐ Founded in 2003
+     ☐ Goal was to develop an OS for digital cameras, but later switched to phones. Acquired by Google in 2005
+     ☐ At Google, team used Linux kernel as basis. Designed for phones with Qwerty keyboards. But with arrival of iPhone, plans changed to use touch screen
+     ☐ Basic Android OS is open source, but hardware manufacturers typically make custom modifications
+       ☐ One UI for Samsung, Pixel UI for Google, ZenUI by Asus... etc
+     ☐ Google develops a proprietary version with some closed-source software. 70% of Android phones use this version
+     ☐ Today, the best-selling mobile OS worldwide
+     ☐ Over three million aps on the Google Play Store
+       ☐ Several third-party app stores also exist
+   ☐ Advantages of Android over iOS:
+     ☐ Open ecosystem: manufacturers can use it and modify it for their own devices
+     ☐ Price point: because of the open market with many different manufacturers, there are many Android models, some being much cheaper than iPhones
+     ☐ Customization: system is much more open to end users
+   ☐ Disadvantage:
+     ☐ Little "too much freedom":
+       ☐ Cases of maleare infiltrating Google Play Apps
+   ☐ Microsoft?
+     ☐ Windows mobile: 2003-2013
+     ☐ Windows Phone: 2010-2020 (Metro UI)
+     ☐ Failed to gain any traction
+     ☐ Tried to beat both iOS and Android: competing goals
+     ☐ Big App Deficit: Not even YouTube
+   ☐ DMA
+     ☐ the Digital Markets Act is an EU regulation for 'gatekeepers' of digital platforms. Such gatekeepers include Apple, Facebook, Google, Microsoft etc.
+     ☐ Objective is to guarantee a level playing field for competition and protect consumers from companies controlling different digital markets
+     ☐ Ultimately a precautionary, yet extrememly significant regualtion.
+     ☐ One of the regulated sectors is the OS platform
+   ☐ iOS compliance with DMA
+     ☐ Alternative app marketplaces
+     ☐ Web distribution of apps
+     ☐ Alternative browser engines
+     ☐ Default web browser choice screen
+     ☐ and more
+     ☐ DMA requires Apple to open up iOS in certain ways which may decrease use safety and ease of use
+     ☐ Problem: the iPhone brand is based on safety and ease of use
+       ☐ What if a government demands citizens download government apps through a government app store?
+   ☐ U.S. v. Apple Inc
+     ☐ Landmark(?) antitrust lawsuit filed within a month ago
+     ☐ Alleges that Apple has a monopoly on smartphone market and has engaged in anticompetitive acts, including
+       ☐ Prohibiting "super apps"
+       ☐ blocking cloud-streaming apps
+       ☐ surpressing text message quality between iPhone/Android
+       ☐ limiting third-parties from competing with Apple Watch
+       ☐ blocking third-parties from competing with Apple Pay
+     ☐ Proposed relief:
+       ☐ Open up iOS to alternative app distribution methods
+       ☐ Allow apps to use private APIs for messaging, smartwatches, digital wallets, etc
+     ☐ What is part of the OS and what are apps allowed to do?
+ ☐ Temple OS
+   ☐ Made by terry davis -> diagnosed with schizo.
+   ☐ Was apparently told by God to make an OS
+   ☐ The OS would be a successor to the Second Temple (a historical place of worship destoryed in the year 70)
+   ☐ he said that God instructed that the OS should have a 640x480 GUI resolution and a 16-bit color display
+   ☐ Davis spent 10 years building the OS
+   ☐ Architecture:
+     ☐ Written using Holy C; a derivative of C
+     ☐ 64-bit, non preemptive multi-tasking, multi-core, single address space, single ring
+     ☐ GUI resembles early DOS-based OS's
+     ☐ Over 100,000 lines of code
+     ☐ Open source
+   ☐ God's oracle
+     ☐ One program built into the OS was designed to generate pseudo-random text and could be run by pressing F7
+     ☐ Davis believed that these were codes messages from God
+   ☐ Other features
+     ☐ shell language is also Holy C; all shell commands are passes through the compiler
+     ☐ System-wide autocomplete
+     ☐ All text files (even source code) use a special format which allows for text, images and links in the same file
+     ☐ Davis also wrote a large number of games and apps for his OS
+   ☐ Reception
+     ☐ Many online made fun of the OS
+     ☐ But it was a very impressive feat for one person to do
+ ☐ Red Star OS
+   ☐ North Korea
+     ☐ Untill 2002, North Korea used Windows
+     ☐ Then, in accordance with a direction from Kim Jong Il, they decided to make their own OS
+   ☐ A Linux distribution
+     ☐ Specifically, SELinux (Security Enhanced Linux)
+       ☐ Enforces mandatory access controls, which can prevent a user from making certain modificiations to the OS
+   ☐ GUI made to resemble Windows XP, then 8, then OS X
+   ☐ Has apps that are mostly just knockoffs of Microsoft/Apple's
 
 
 The Process:
@@ -1162,16 +1533,6 @@ Paging:
           ☐ TLB replacement policies are similar to page replacement policies, though they are often more simplifies and appriximations.
           ☐ Implementations have to be very fast (since the TLB must be very fast), and are typically done in hardware to avoid going into the OS
 
-
-
-
-
-
-
-
-
-
-
 The Disk:
  ☐ I/O Devices
    ☐ Key Concepts:
@@ -1346,27 +1707,6 @@ The Disk:
         ☐ Log-based FTL:
           ☐ Since erases are only required once in a while in this scheme, and the "read-modify-write" pattern of the direct-mapping approach is avoided completely, the log-based FTL greatly improved performance.
           ☐ It also improve reliability, since writes are spread across all pages
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  ☐ File API
    ☐ The file:
      ☐ A linear array of bytes, each of which can be read/written
@@ -1377,6 +1717,754 @@ The Disk:
        ☐ The call returns a file descriptor: an integer for that process that you can use read/write to the file
          ☐ File descriptors are managed on a per-process basis
      ☐ Reading and writing files:
-       ☐ If we were at the terminal, we might use cat to show the contents of a file
-       ☐ How does cat access a file? we can find out by using the strace command, which traces the system calls of a program.
-         ☐ 
+       ☐ Reading:
+         ☐ If we were at the terminal, we might use cat to show the contents of a file
+         ☐ How does cat access a file? we can find out by using the strace command, which traces the system calls of a program.
+         ☐ Cat first opens the file (for reading only). It returns the file descriptor 3
+           ☐ Each running process already has 3 files open at the start: standard input(0), standard output(1) and standard error(2)
+         ☐ It then passes the file descriptor to the read() system call (along with a buffer into whuch the read data will be stored, and the size of the buffer). The call will return the number of bytes read
+         ☐ Then, it likely calls printf, which will invoke the write() system call, giving 1 (standard output) as the file descriptor
+         ☐ Finally, it tries to read from the file again. Since there is nothing else, read() returns 0 for 0 bytes, so cat knows there is nothing left. So it calls close() to indicate it is done with the file
+       ☐ Writing:
+         ☐ Done similarly, except we open a file for writing and use the write() system call (perhaps repeatedly for larger files), then close it
+         ☐ So far, we haveread/written from the beginning to the end of a file. What if we want to read/write only in the moddle of a file, or some specific ofsset?
+         ☐ We can do so using the lseek() system call
+       ☐ lseek()
+         ☐ takes three arguments:
+           ☐ file descriptor
+           ☐ the file offset
+           ☐ how the seek should use the offset
+             ☐ use offset as given
+             ☐ use current location + offset
+             ☐ use file size + offset
+         ☐ lseek() only changes the current offset, it does not read or write
+       ☐ Process file info
+         ☐ The offset for a file, as well as other information like a pointer to the file's inode, is kept in a process file struct that has attributes like a reference counter, is_readable, is_writable, inode_ptr, current offset
+       ☐ Open file table
+         ☐ The file structs are kept together in an array called the open file table, again one for each process
+         ☐ The index of a file struct in the array is its file descriptor
+     ☐ The directory
+       ☐ Also has an inode number
+       ☐ Contains a list of files in format (filename, inode)
+         ☐ Directories can also contain other (sub)directories
+     ☐ Directory Hierarchy
+       ☐ Starts at the root directory("/" in Unix-based systems).
+       ☐ Uses separator to name subsequent sub-directories
+       ☐ Absolute pathname of a file is its path from the root
+     ☐ Hard links
+       ☐ link() is a system call. it takes two arguments: an old path and a new path. It will create the same file at the new path of the file at the old path
+       ☐ The two files will be exactly the same. They will not be copies nor aliases. They will have the exact same inode
+       ☐ When a link is made, a reference count in the inode struct will increase by one. When a file is unlikned, the file is removed from its directory struct and the inode ref counter decreases by one
+       ☐ When the ref count is 0, the filesystem can free inode and truly "delete" the file. thus only when the last hard link to an inode is deleted will the underlying file be deleted
+       ☐ Hard links can also be made through the ln command-line tool
+     ☐ Symbolic links
+       ☐ A different type of link can be made using ln -s, known as a symbolic link
+       ☐ Hard links are limited: they can't be made to directories or to files in other partitions, since they are based on inodes.
+       ☐ Symbolic links have no such limits. But they are very different than hard links
+       ☐ A symbolic link is a file itself with its own inode. The conents of the file is a pathname to the linked-to file (as such, symbolic links are typically only a few bytes in size).
+       ☐ If we remove the linked-to file, the symbolic link will not be deleted (since its connection to the original is not stored with the original file). Therefore, the symbolic link will become an invalid reference
+     ☐ Symbolic links vs. aliases:
+       ☐ A regular file "alias" created in the Mac Finder, for example, is different from a symbolic link since the former typically stores the inode of the original file.
+       ☐ A symbolic link contains only the pathname. So if the original file is moved, the symbolic link will no longer work
+     ☐ See Lecture 10 slide 50ish for examples of Symbolic and Hard Links
+     ☐ Mounting a filesystem
+       ☐ mkfs: a command-line tool that takes a device as input and a filesystem type and writes an empty filesystem with root directory to disk
+       ☐ mount: takes a device with a filesystem and makes it available at a given directory
+
+The Filesystem:
+ ☐ Implementing a filesystem
+   ☐ File System role:
+     ☐ The main tasks of the filesystem is to **translate** from **user interface** funtions (like Read()) to **disk interface** functions (ReadSector())
+   ☐ The filesystem is pure software
+   ☐ Data Structures
+     ☐ Disks vs in-memory simple but golden rules:
+       ☐ If it is not on disk and you crash, it is gone!
+       ☐ If you need it after a crash, it must be on disk
+ ☐ On-disk structures
+   ☐ Disk Data Structures
+     ☐ Data Region <- occupies most space in Filesystem
+       ☐ User data
+       ☐ Free space
+     ☐ Metadata
+       ☐ Inodes
+       ☐ Free space management (bitmap)
+       ☐ Superblock
+   ☐ Remember, we want a translation between user filesystem interface to disk interface
+     ☐ Need some structure to map files to disk blocks
+       ☐ Reserve Data Region on disk to Store User Data
+         ☐ Data region contains user data (files) and free space)
+     ☐ Same principle: map logical abstraction to physical resource
+   ☐ The inode:
+     ☐ Inode is short for index node. Almost all filesystems have inodes. Inodes contain data for a file like:
+       ☐ its type (regular file, directory, symbolic link)
+       ☐ size (in bytes)
+       ☐ number of blocks allocated to it
+       ☐ owner (uid) + permissions (rwx)
+       ☐ time info (created, modified, last accessed date)
+       ☐ info about where its data blocks reside on disk
+     ☐ An inode has an inode-number called the low-level name of the file
+     ☐ Given the inode-number, you can directly locate where on disk the inode is located (i.e., where inside the inode table)
+       ☐ Assume that the inode table starts at 12KB. Then inode 32 would be located at 12 KB + (32 * sizeof(inode))
+   ☐ Reserve Inode Table to track files
+     ☐ Inode table: holds an array of on-disk inodes
+     ☐ Note that the reserved space for the inode table is different than the reserved data region for the user data
+     ☐ Inodes are not too large (128 or 256 bytes per inode)
+   ☐ How do we track free space?
+     ☐ Allocation structures:
+       ☐ For data
+       ☐ For inodes
+     ☐ Allocation Structures implementation:
+       ☐ Free-lists (remember from memory management module)
+       ☐ Bitmaps
+         ☐ Data structure where each bit indicates if corresponding object is free or in use
+         ☐ 1 = in use
+         ☐ 0 = free
+       ☐ We will use bitmaps (Data bitmap, Inodes bitmap)
+     ☐ Reserve Blocks for Allocation Structures (in this case the bitmaps)
+   ☐ At this point in the example for Lecture 11, there is 1 block left unallocated. This is the super block.
+   ☐ Superblock
+     ☐ Contains file system metadata
+       ☐ #inodes
+       ☐ #data blocks
+       ☐ Start of inodes table
+       ☐ ...
+   ☐ Final question now: how to allocate files to data blocks (and the converse, how to handle free space)
+     ☐ User Data Allocation Strategies:
+       ☐ Contiguous
+       ☐ Extent-based
+       ☐ Linked list
+       ☐ File-Allocation tables (FAT)
+       ☐ Indexed
+       ☐ Multi-level indexed
+   ☐ Filesystem fragmentation types
+     ☐ Internal fragmentation
+       ☐ How much a file's allocated blocks is actually being used by the file? (Typically, all of it, except perhaps part at the end.)
+       ☐ Not a big consideration
+     ☐ External Fragmentation
+       ☐ The location and size of the free blocks. Could pose aproblem to allocate new files, depending on the allocation strategy.
+       ☐ Also, the location and size of the allocated blocks. Could pose a speed problem, depening on the hard drive type
+   ☐ Contiguous Allocation
+     ☐ Strategy:: Allocate file data blocks contiguously on disk
+     ☐ Metadata: Starting block + size of file
+       ☐ High Fragmentation (many unusable holes) :(
+       ☐ Growing Files: may not be able to grow without moving file :(
+       ☐ Sequential Access: Excellent :)
+       ☐ Random Access: Simple calculation :)
+       ☐ Metadata overhead: Low
+       ☐ Conclusion: Impractical
+   ☐ Extend-based Allocation
+     ☐ Strategy: Allocate multiple contiguous regions (called extents) per file
+     ☐ Metadata: Array of extends. Each entry contains extend starting block and size
+       ☐ Helps external fragmentation
+       ☐ Growing Files: can grow :)
+       ☐ Sequential Access: Good performance :)
+       ☐ Random Access: Simple Calculation :)
+       ☐ Metadata overhead: Can get large if many extents :(
+       ☐ Used in HFS+/NTFS
+   ☐ Linked-List Allocation:
+     ☐ Strategy: Allocate linked-list of blocks
+     ☐ Metadata: Location of first block file, plus each block contains pointer to next block
+       ☐ Fragmentation: No external fragmentation, low internal fragmentation :)
+       ☐ Growing files: Can grow easily :)
+       ☐ Sequential Access: Depends on data layout (may have to seek back and forth)
+       ☐ Random Access: Slow :(
+       ☐ Metadata overhead: Wastes space on pointers in data blocks :(
+   ☐ File-Allocation Tables (FAT)
+     ☐ Strategy: Keep links information for all files in a data structure on disk, called the file allocation table (FAT). Optimization: the FAT can be cached in memory
+     ☐ Metadata: Location of first block of file, plus FAT table itself
+       ☐ Fragmentation: Same as linked list :)
+       ☐ Growing files: same as linked list :)
+       ☐ Sequential access: same as linked list
+       ☐ Random access: significantly better than linked list if FAT cached in memory :)
+       ☐ Metadata overhead: Low for small files. what about large files :(
+       ☐ Used in MS-DOS, early Windows
+       ☐ Notes: links stored in FAT
+   ☐ Indexed Allocation
+     ☐ Strategy: Keep pointers to blocks of files in an index in the file's inode. Cap at maximum N pointers.
+     ☐ Metadata: Index for each file.
+       ☐ Fragmentation: No external fragmentation, low internal fragmentation :)
+       ☐ Growing Files: Can grow easily :)
+       ☐ Sequential Access: Efficient :) (seeks can be optimized)
+       ☐ Random Access: Efficient :)
+       ☐ Metadata overhead: Low for small files.
+       ☐ Notes: Can be combined with extent allocation; Extent + indexing used in NTFS, ext4(Linux), APFS
+   ☐ Indexed Allocation with Indirect Blocks
+     ☐ N Pointers in inode block
+     ☐ First M (<N) point to first M data blocks
+     ☐ Blocks M+1 to N point to indirect blocks
+     ☐ Indirect blocks
+       ☐ Do not contain data
+       ☐ But pointers to subsequent data blocks
+     ☐ Double-indirect blocks also possible
+     ☐ Same advantages as indexed allocation plus
+     ☐ Possible to extend to very large files
+   ☐ What about Directories?
+     ☐ Directories stored as files
+   ☐ SEE THE PRACTICE PROBLEM AT THE END OF LECTURE 12
+   ☐ SEE PRACTICE ITERATION ON LECTURE 13 OF FILE SYSTEM MAIN ACCESS METHODS
+ ☐ In-memory structures
+   ☐ remember: File system Implementation
+     ☐ Key aspects of the system:
+     ☐ 1. Data Structures
+       ☐ On disk
+       ☐ In memory <- In memory data structures are used to make I/O more efficient
+     ☐ 2. Access methods
+       ☐ How do we open(), read(), write()
+   ☐ In-Memory Data Structures
+     ☐ Cache
+     ☐ Cache Directory
+     ☐ Queue of pending disk requests
+     ☐ Queue of pending user requests
+     ☐ Active file table
+     ☐ Open file tables
+   ☐ Cache
+     ☐ Fixed contiguous area of kernel memory
+     ☐ Size = max number of cache blocks x block size
+     ☐ A large chunk of memory of the machine
+     ☐ In genereal, write-behind is used
+     ☐ for user data ok
+     ☐ For metadata
+       ☐ Written to disk more aggressibely
+       ☐ Affects integrity of file system
+   ☐ Cache Directory
+     ☐ Usually a hash table
+     ☐ index = hash(disk address)
+     ☐ With an overflow list in case of collision
+     ☐ Usually has a "dirty" bit
+   ☐ Cache Replacement
+     ☐ Keep LRU list
+       ☐ Unlike memory management, here easy to do
+       ☐ Accesses are far fewer (file vs memory access)
+     ☐ If no more free entries in the cache
+       ☐ Replace "clean" block according to the LRU
+       ☐ Replace "dirty" block according to LRU
+   ☐ Cache Flush
+     ☐ Find "dirty" entries in cache
+     ☐ Write them back to disk
+       ☐ Periodically (30 seconds)
+       ☐ When disk is idle
+   ☐ (System-Wide) Active File Table
+     ☐ One array for the entire system
+     ☐ One entry per open file
+     ☐ Each entry contains
+       ☐ File inode
+       ☐ Additional information
+         ☐ Reference count of number of file opens
+   ☐ (Per-Process) Open File Tables
+     ☐ One array per process
+     ☐ One entry per file open of that process
+     ☐ Indexed by file descriptor fd
+     ☐ Each entry contains
+       ☐ Pointer to file inode in active file table
+       ☐ File pointer fp
+       ☐ additional information
+   ☐ SEE EXAMPLE IN LECTURE 13
+ ☐ Setting up the filesystem
+   ☐ Setting up the FS:
+     ☐ By default, OS sees all storage devices as 
+       ☐ Chunks of unallocated space
+       ☐ Which are unusable
+     ☐ Cannot start writing files to a blank drive
+     ☐ Need to set up the FS first
+   ☐ Disk Partitioning (or Slicing)
+     ☐ Filesystem needs a "container" on the storage device
+     ☐ Container is called a partition
+     ☐ Partitioning allows different FS to be installed on same OS
+     ☐ Each partition appears to OS as a logical disk
+     ☐ Disk stores partition info in partition table
+       ☐ Partition locations
+       ☐ Partition sizes
+     ☐ OS reads partition table before any other part of the disk
+   ☐ Mounting a File System (FS)
+     ☐ FS lives inside a partition
+     ☐ But OS cannot read/write files yet
+     ☐ File system needs to be mounted for OS t oaccess its files
+     ☐ Mounting attaches filesystem to a directory
+     ☐ Directory is called mount point
+   ☐ Multiple FS
+     ☐ Users may want to have many FS at the same time
+       ☐ Main disk
+       ☐ Backup Disk
+       ☐ USB drive
+       ☐ etc
+     ☐ How can OS support this?
+     ☐ Idea: Stitch all the file systems together into a "super file system"!
+     ☐ root(/) file system is always mounted
+     ☐ OS keeps track of mounted FS in Mounted FS Table
+   ☐ Booting
+     ☐ We said root (/) file system was always mounted.
+     ☐ How is this done?
+     ☐ Very first thing that happens when computer turns on
+     ☐ BIOS looks for clues on what it needs to start OS
+     ☐ First place BIOS checks is the boot block
+   ☐ Boot Block
+     ☐ At fixed location on disk (usually sector 0)
+       ☐ Contains boot loader
+       ☐ Contains partition table
+     ☐ Read by BIOS on machine boot
+   ☐ File System Startup
+     ☐ Normally, nothing would be necessary
+     ☐ Sometimes things are not normal
+       ☐ Disk sector goes bad
+       ☐ File system software has bugs
+       ☐ ...
+     ☐ Common to "check" the file system (fsck)
+   ☐ File system check
+     ☐ No sectors are allocated twice
+     ☐ No sectors are allocated an on free list
+     ☐ Reconstruct free list
+   ☐ Replication
+     ☐ Some key sectors are replicated
+       ☐ Boot blocks
+       ☐ Sometimes also inode blocks
+ ☐ Memory-mapped files
+   ☐ Alternative File Access Method: Memory Mapping
+     ☐ mmap()
+       ☐ Map the contents of a file in memory
+     ☐ munmap()
+       ☐ Remove the mapping
+   ☐ Recall typical virtual address space structure:
+     ☐ code
+     ☐ heap
+     ☐ region of unused chunks
+     ☐ stack
+   ☐ We can use the region of unused chunks for the mmap region, and place an mmapped file in the mmapped region
+   ☐ Remember Large Address Spaces?
+     ☐ 64 bit address space
+     ☐ Do you know now why desireable?
+       ☐ 32 bits -> 4Gbytes
+       ☐ A few big files mmaped()-ed
+       ☐ You are out of virtual address space!
+   ☐ Access to mmap()-ed Files
+     ☐ Access to mmaped()-ed memory region
+     ☐ Causes page fault
+     ☐ Causes page/block of file to be brough in
+   ☐ mmap() implementation
+     ☐ On mmap()
+       ☐ Allocate page table entries
+       ☐ Set valid bit to "invalid"
+     ☐ On access,
+       ☐ Page Fault
+       ☐ File = backing store for mapped region of memory
+       ☐ Just like in demand paging
+       ☐ Except paged from mapped file
+     ☐ After page fault handling
+       ☐ Set valid bit to true
+   ☐ How to get data to disk for mmap?
+     ☐ Through normal page replacement
+     ☐ Or through an explicit call msync()
+   ☐ What is mmap() good for?
+     ☐ Random access to large file
+   ☐ Random Access with mmap()
+     ☐ addr = mmap()
+     ☐ Use memory addresses in [addr, addr+len-1]
+   ☐ Random Access with Read() Interface
+     ☐ Open
+     ☐ Read entire file into memory buffer
+     ☐ Then use memory address in buffer
+   ☐ Advantage with mmap()
+     ☐ Only accessed portions brough in memory
+     ☐ Huge advantage
+       ☐ For large files
+       ☐ Sparesely accessed
+     ☐ Much easier programming model
+       ☐ Follow pointer in memory
+       ☐ As opposed to (Seek, Read) every time
+     ☐ Easier if reuse
+       ☐ VM system keeps page for you
+       ☐ Otherwise, have to do your own replacement
+   ☐ Random Access with Seek()
+     ☐ Open
+     ☐ Seek
+     ☐ Read into Buffer
+     ☐ Seek
+     ☐ Read into Buffer
+   ☐ mmap() Advantages for Random Access
+     ☐ Easy to write
+     ☐ Only bring in memory what you read
+     ☐ Easy reuse
+   ☐ Issues with mmap()
+     ☐ Alignment on page boundary
+     ☐ Not easy to extend a file
+     ☐ For small files
+       ☐ Read() more efficient than mmap() + page fault
+   ☐ **YOU SUCH AT MMAP**
+ ☐ Log-structured file systems
+   ☐ Recall: Log-based FTL
+     ☐ An SSD consists of some number of flash chips, volatile memory (for caching, e.g.) and soem control logic
+     ☐ Control logic includes the flash translation layer (FTL). It takes read and write requests on logical blocks and turns them into low-level read, erase and program commands on the device
+     ☐ Most FTLs today are log structured
+       ☐ Upon a write to logical block N, the device appends the write to the next free spot in the currently-being-written-to block
+       ☐ A mapping table stores the physical address of each logical block in the system
+   ☐ Log-Structured File System (LFS)
+     ☐ Alternative way of structuring file system
+     ☐ Log = append-only data structure (on disk)
+   ☐ LFS Motivation
+     ☐ LFS design takes into account:
+     ☐ Growing memory sizes:
+       ☐ Most frequent reads are cached
+       ☐ FS performance comes from write performance
+       ☐ Optimize for writes!
+     ☐ Large gap between random I/O and sequential I/O performance
+   ☐ LFS Idea
+     ☐ Use disk purely sequentially
+     ☐ Easy for writes
+       ☐ Can do all writes near each other to empty space - new copy
+     ☐ Hard for reads
+       ☐ User might read files X and Y not near each other on disk
+       ☐ Maybe not be too bad if disk reads are slow - why?
+         ☐ Memory sizes are growing (cache more reads)
+   ☐ LFS Strategy
+     ☐ File system buffers writes in main memory until "enough" data
+       ☐ Write both Inodes and data
+     ☐ Write buffered information sequentially to new segment on disk
+       ☐ Segment: large (MBs) contiguous regions on disk
+     ☐ Never overwrite old info: old copies left behind
+       ☐ Old copies garbage collected later
+     ☐ What data structures can LFS remove?
+       ☐ Allocation structs: data + inode bitmaps
+     ☐ What is much more complicated?
+       ☐ Inodes are no longer at fixed offset
+     ☐ New Data Structure: imap (inode map)
+       ☐ The imap
+         ☐ Table of inode disk addresses
+           ☐ Maps uid to disk address of last inode for that uid
+           ☐ Updated every tiem inode is written to disk
+         ☐ Using the imap
+           ☐ Open()
+             ☐ Get inode address from inode imap
+             ☐ Read inode from disk into Active File Table
+           ☐ Read(): as before
+             ☐ Get from cache
+             ☐ Get from disk address in inode
+         ☐ Where to keep imap?
+           ☐ Write imap in segments, keep pointers to pieces of imap in memory
+     ☐ Crash?
+       ☐ What data needs to be recovered after crash?
+         ☐ need imap
+         ☐ Write copy of imap to fixed location on disk
+         ☐ Put marker in the log (called tail marker)
+         ☐ Checkpoint periodically. Example: every 30 seconds
+       ☐ time Interval between Checkpoints:
+         ☐ Too short: lots of disk I/O to write checkpoints
+         ☐ Too lon: long recovery time (forward scan)
+         ☐ Comprimose
+           ☐ Crashes are rare
+           ☐ So recovery seldom happens
+           ☐ Can tolerate longer recovery time
+     ☐ Crash Recovery with Checkpointing
+       ☐ Start from imap in checkpoint
+         ☐ Contains addresses of all inodes written before last checkpoin
+       ☐ How to find inodes?
+         ☐ That were in in-memory inode map before crash
+         ☐ but not written in the checkpoint
+       ☐ Roll forward
+         ☐ Remember: checkpoint put marker in log
+         ☐ From marker forward
+           ☐ scan for inodes in the log
+           ☐ Add their addresses to inode map
+             ☐ Result: All inode addresses in imap before crash are in imap afterwards
+     ☐ What if Crash during checkpoint?
+       ☐ Two checkpoint regions
+       ☐ Overwrite one checkpoint at a time
+       ☐ Use timestamps to identify most recent checkpoint
+     ☐ What if the Disk is full?
+       ☐ No sector is ever over written
+         ☐ Always written to end of log
+       ☐ No sector is ever put on free list
+       ☐ So disk will get full (quickly)
+       ☐ Need to "clean" the disk
+     ☐ Disk Cleaning
+       ☐ Reclaim "old" data
+       ☐ "Old" here means
+         ☐ Logically overwritten
+         ☐ But not physically overwritten
+           ☐ Older version of (uid, blockno) somewhere in the log
+       ☐ Segments can contain a mix of old and new data
+       ☐ Done one segment at a time:
+         ☐ Determine which blocks are new
+         ☐ Write them into buffer
+         ☐ If buffer is full, write new segment
+         ☐ Cleaned segment is marked free
+       ☐ See example in Lecture 15
+     ☐ Summary: LFS
+       ☐ reads mostly from cache
+       ☐ writes to disk heavily optimized: few seeks
+       ☐ Reads from disk: bit more expensive but few
+       ☐ Cost cleaning
+       ☐ Has not become maintsteram 
+         ☐ cost of cleaning is considerable (similar to garbage collection)
+         ☐ Unpredictable performance dips
+       ☐ Similar ideas in some commercial systems
+         ☐ Log-structered merge key-value stores
+ ☐ Bad Sectors
+   ☐ Due to manufacturing errors, regular wear-and-tear, physical impact or dust, sectors on a hard drive can sometime become defective or "bad".
+   ☐ the contents of these sectors will be lost, and writing to them will fail
+   ☐ Detecting bad sectors
+     ☐ Typically, the disk firmware can detect a bad sector if it tried to read from that sector and fails. It will then mark that sector as bad and will not try to read/write to it again
+       ☐ Instead, it remaps the logical sector number to a different physical sector number (recall the FTL which does this kind of mapping)
+       ☐ It remaps to a "spare" sector that was kept empty for this purpose. Once all the spare sectors have been used for remapping, the drive will need to be replaced
+     ☐ The firmware reports the number of bad sectors to the OS through SMART, which can be read by software utilities
+   ☐ A sector may not become bad all at once. there may be warning signs.
+   ☐ Whenever data is written to a sector, a checksum (error-correcting code, or ECC) is stored along with the data
+   ☐ When reading the same data, we can recalculate the checksum, and if it is different, we know the sector is bad
+     ☐ However, depending on the difference of the checksum, we can recover the corrupted data (very common)
+   ☐ Recovering deleted files:
+     ☐ When a file is deleted, and has no more links, its inode and data blocks are markes as free in the bitmap. (And its directory entry will be removed.)
+     ☐ But the contents of the file will still be stored on disk until such point that the space is needed for a new file
+     ☐ Depending on the particular file system, its garbage collection routines, and the volume of disk writes, there will be a window of time starting from the deletion of the file where the file may still be recoverable
+   ☐ Recovering inode:
+     ☐ If we can recover the deleted inode, then we can check the pointers to teh allocated data blocks and try to stitch together the deleted file contents
+   ☐ Recovering data blocks:
+     ☐ If we can't recover the inode, we have to scan the data blocks marked as free
+     ☐ This strategy is known as file carving
+     ☐ A big issue here is the data block allocation policy
+   ☐ File Carving:
+     ☐ File carvers search a disk for occurrences of particular headers and footers for given file formats
+       ☐ every Java class file starts with the hex calues CA FE BA BE
+     ☐ This allows them to identify the starting and ending point of files
+     ☐ They can then "carve" (copy) some of the bytes of these (possibly deleted) files
+     ☐ This can be done even if the filesystem metadata has been completely corrupted/destoryed
+     ☐ But the file(s) must be stored in contiguous data blocks for it to work out well
+   ☐ File carvers and allocation policies
+     ☐ certain filesystems do try to allocate contiguously as much as possible, to avoid disk fragmentation.
+       ☐ Fragmented files (e.g., files that are spread out all over the disk) lead to much higher seeks times.
+       ☐ So file carving will work well here
+     ☐ But newer filesystems that are SSD-aware don't try as much, since fragmentation is not an issue (no seek time)
+       ☐ So file carvers don't work as well
+ ☐ Crash recovery
+   ☐ Crashes:
+     ☐ What happens if, in the middle of updating on-disk structures, there is a power loss or system crash
+     ☐ The on-disk structure may be left in an inconsistent state
+   ☐ Crash consistency problem
+     ☐ What we'd like is to update file system state atomically (e.g., after inode, bitmap and data block are written).
+     ☐ But disk only commits one write at a time.
+     ☐ This is known as the crash consistency problem
+     ☐ Solution 1: fsck
+       ☐ Early file systems let these inconsistencies occur, and then fix them later (during rebooting).
+       ☐ They could run a tool called fsck (file system checker)
+       ☐ It finds inconsistencies and repairs them.
+         ☐ But it can't fix all problems; e.g., if the data block is never written
+       ☐ fsck phases:
+         ☐ fsck is run before the filesystem is mounted. It has several phases:
+           ☐ It does sanity checks on the superblock. E.g., if the filesystem size is greater than the number of allocated blocks.
+           ☐ It scans all inodes, indirect blocks, double indirect blocks, et.c, to find out which blocks are allocated and which are free. Then it compares this information with the data bitmaps and inode bitmaps. If any inconsistency, it trusts the info in the inodes
+           ☐ It checks each inode for corruption. E.g., if the type fields are valid (regular file, directory, symbolic link). If there are problems, the inode is removed.
+           ☐ It checks the link count of each allocated inode. (The link count indicates the number of directories that contain a reference to this file.) It verifies this count by scanning the entire directory tree to build its own link count. If a mismatch it corrects the inode
+           ☐ It checks for bad block pointers. A pointer is bad if it points to something outside its valid range (e.g., outside the partition size.) It removes bad pointers
+           ☐ It does some checks on the contents of each directory: if. and .. are the first entries, if each reference node is allocated, etc.
+       ☐ The problem with fsck is that it is too slow. Could take many minutes, or hours, with larger disks
+       ☐ The basic premise is also slightly irrational: if a crash occurred between three writes, it is very expensive to scan the entire disk to fix this small problem
+     ☐ Solution 2: Implement Atomicity
+ ☐ Atomocity - Another solution to the crash consistency problem
+   ☐ Atomocity in a file seystem means all updates are on disk, or no updates at all; nothing in between (atomicity = "all or nothing")
+   ☐ 2 Ways to implement Atomicity:
+     ☐ Approach 1: Shadow Paging
+       ☐ Have old copy on disk
+       ☐ Have new copy on disk
+       ☐ Switch atomically between the two, using WriteSector()
+       ☐ Write-through or Write-behind
+     ☐ Approach 2: Intentions Log
+       ☐ On Write:
+         ☐ Write to cache
+         ☐ Write to log
+         ☐ Make in-memory Inode point to update in log
+       ☐ On Close()
+         ☐ Write old and new inode to log in one disk write
+         ☐ Copy updates frm log to original disk locations
+         ☐ When all updates done, overwrite inode with new value
+         ☐ Remove updates and old and new inode from log
+       ☐ Crash Recovery:
+         ☐ Search forward through log
+         ☐ For each new inode found
+           ☐ Find and copy updates are done, write new inode
+           ☐ Remove updates, old inode, and new inode from log
+         ☐ If crash and new inode in log, then use the new inode after crash
+         ☐ If crash and new inode not in log, then use the old inode after crash
+   ☐ Which approach better?
+     ☐ Count the number of disk I/Os
+     ☐ count the number of random disk I/Os
+     ☐ Shadow Paging: two disk writes; one for data block, one for inode
+     ☐ Intentions log: four disk writes: two for data block, two for inode
+   ☐ 
+
+Concurrency:
+  ☐ Option 1
+    ☐ Build apps from many communicating processes
+    ☐ Communicate through message passing
+      ☐ No shared memory
+    ☐ Pros
+      ☐ If one process crashes, other processes unaffected
+    ☐ Cons
+      ☐ High communication overheads
+      ☐ Expensive context switching
+  ☐ Option 2
+    ☐ New abstraction: thread
+    ☐ Multiple threads in process
+    ☐ Threads are like processes, exept
+      ☐ Multiple threads in the same process share an address sapce
+      ☐ Communicate through shared address space
+      ☐ If one thread crashes,
+        ☐ the entire process, including other threads, crashes
+  ☐ Processes provide separation
+    ☐ In particular, memory separation (no shared data)
+    ☐ Suitable for coarse-grain interaction
+  ☐ Threads do not provide separation
+    ☐ In particular, threads share memory (shared data)
+    ☐ Suitable for tighter integration
+  ☐ The purpose of threads:
+    ☐ Parallelism: use each CPU core to do part of the work of a big task
+    ☐ Efficiency: to avoid program slowdowns from slow I/O. Enable overlap of I/O with other activies in a program
+    ☐ Threads share an address space, so are more natural to use for these cases instead of having multiple processes
+  ☐ Why concurrency in OS?
+    ☐ OS was first concurrent program
+      ☐ Internal OS structures (e.g., block size for files) must be updated carefully to ensure data not lost
+  ☐ Joining threads: need place to store return value for a thread
+  ☐ Different possible executions with multiple threads; up to scheduler
+    ☐ See Lecture 17 slide 30 for different possibilities
+  ☐ Shared Data: data that all threads "share" or can refer to
+    ☐ Advatages
+      ☐ many threads can read/write it
+    ☐ Disadvantages:
+      ☐ Many thres can read/write it
+      ☐ Can lead to data races
+  ☐ Data Race
+    ☐ unexpected/unwanted access to sahred data
+    ☐ Result of interleaving of thread executtions 
+    ☐ Prgram must be correct for all interleavings
+  ☐ Race condition: when the results depend on the timing of the code's execution. It occurs when there is unexpected/unwanted access to shared data
+  ☐ Non-detminism
+    ☐ Concurrency leads to non-deterministic results
+      ☐ Different results even with the same inputs
+      ☐ Race conditions
+  ☐ Basic approach to multithreading
+    ☐ Divide "work" among multiple threads &
+    ☐ Share data
+      ☐ Which data is shared?
+        ☐ global variables and heap
+        ☐ not local variables, not read-only variables
+      ☐ Where is shared data accessed?
+        ☐ Put shared data access in critical section
+  ☐ Critical Section
+    ☐ Want 3 instructions to execute as an uninterupptable group
+    ☐ That is, we want them to be atomic
+    ☐ Need mutual exclusion for critical sections
+      ☐ If thread A is in critical section C, thread B can't enter C
+      ☐ Ok if other processes do unrelated work
+    ☐ Mutual Exclusion
+      ☐ Prevents simultaneous access to a shared resource
+        ☐ In this case, shared resource = shared memory region
+      ☐ How can we achieve mutual exclusion?
+  ☐ Synchronization
+    ☐ Build higher-level synchronization primitives in OS
+      ☐ Operations that ensure correct ordering of instructions across threads
+    ☐ Monitors, Locks, Semaphores, Condition variables
+  ☐ Locks:
+    ☐ A lock is a special variable + function
+    ☐ It lets us execute a critical section atomically, thus making sure that only one thread executes the ciritical section at a time
+    ☐ critical section/code goes between lock() and unlock() calls
+    ☐ Goals of a lock:
+      ☐ Mutual exclusion
+      ☐ Fairness (each thread should get a fair shot at acquiring the lock)
+      ☐ Performance (time overheads)
+    ☐ Implementation for a lock: "Test-and-set" is optimal
+      ☐ Using loads/stores has bad performance, plus it does not actually enforce mutual exclusion
+      ☐ Controlling interupts:
+        ☐ programas would be trusted with privileged operation; could be abused to grab hold of CPU and maybe never let go
+        ☐ Does not work with multiple CPUs (two threads on different CPUs could both enter critical section)
+        ☐ If interrupts are disabled, what will happen with I/O requests?
+      ☐ In the x86 architecture, the xchg instruction provides the test-and-set functionality
+      ☐ Implementation involves TestAndSet() function, which fetches old value, sets to new, and returns the old
+      ☐ Spin locks:
+        ☐ a lock "locks" by spinning; while (TestAndSet() == 1)
+          ☐ spinning only stops when the old value (the returned value) is 0, allowing access to the critical section only once nothing else is accessing it
+        ☐ By making the testing and setting of the flag atomic, only one thread can acquire the lock. Thus, we have enforced mutual exclusion
+        ☐ These locks are known as spin locks, since they use a while loop to spin and waste CPU cycles. How do they do on our three goals?
+          ☐ Correctness: OK (provides mutual exclusion)
+          ☐ Fairness: no guarantees (a thread may spin forever)
+          ☐ Performance:
+            ☐ Bad on single CPU. If a thread is preempted in CS, scheduler may run all other threads which try to acquire the lock, thus wasting CPU time spinning.
+            ☐ Multiple CPUs: not so bad, since only one CPU will be spinning, and can spin while CS is being executed
+            ☐ Addressing this: yield. In the while loop, instead of looping over and over, call yield() to deschedule the current thread to not waste CPU cycles
+    ☐ Deadlocks
+      ☐ Threads are stuck waiting for blocked resources and no amount of retry (backoff) will help
+  ☐ Condition Variables
+    ☐ Conditions
+      ☐ Sometimes, a thread may want to check whether some condition is true before continuing
+      ☐ One example we've already seen is when a parent thread wants to wait until a child thread has finished executing
+      ☐ It does so by calling join -- but how could we implement such a wait ourselves
+    ☐ To wait for a condition to become true, a thread can use a condition variable. This is a queue that threads can put themselves on when some condition is not true, by calling wait(). A waiting thread will go to sleep (and thus not waste CPU time)
+    ☐ When the condition changes, i.e., when another thread calls signal(), then the (first) waiting thread can wake up and continue
+    ☐ Producer-consumer problem:
+      ☐ A classic synchronization problem is knows as the producer/consumer problem
+      ☐ Imagine there is a producer thread and one or more consumer threads
+        ☐ The producer thread produces data items and places them in a buffer
+        ☐ The consumer threads consume the data items from the buffer (by doing some processing on each)
+      ☐ Since the queue (also knows as bounded buffer) is a shared resource between threads, we must implement synchronized access to avoid race conditions
+
+  ☐ Semaphores
+    ☐ A shared, non-negative counter
+    ☐ Two primary operations
+      ☐ Wait -> attempts to decrement the counter, and blocks when counter is 0
+      ☐ Post (or Signal) -> attempts to increment the coutner
+    ☐ Initializing the Semaphore
+      ☐ Here we create a semaphore with value 1 with the POSIX library
+    ☐ sem_wait()
+      ☐ Decrements the semaphore value by 1 (blocks if value is negative)
+    ☐ sem_post()
+      ☐ increments the semaphore value by 1. Wakes one waiting thread, if anyj
+    ☐ Can also be used to order events in a concurrent program
+  ☐ Correct use in Producer-consumer problem:
+    ☐ Acquire mutex lock only after acquiring full/empty semaphore
+  ☐ Dining Philosopher's Problem
+    ☐ Solution: Change how at least one philospoher grabs the forks E.g., P4 grabs right fork first, and then left
+    ☐ cycle of waiting now broken
+  ☐ Alice and Bob share a Pond and Pet Dragons
+    ☐ The Flag Principle
+
+
+IPC:
+ ☐ A very common pattern:
+   ☐ Client
+     ☐ Send (send reqeust to server)
+     ☐ Blocking recieve ( wait for reply)
+   ☐ Server
+     ☐ Blocking receive (wait for request)
+     ☐ Send (send reply)
+ ☐ Remote Procedure Call: when a client wants to call a function that belongs to server code
+   ☐ Interface
+     ☐ List of remotely callable procedures
+     ☐ With their arguments and return values
+   ☐ Example: file system interface
+     ☐ Open(string filename)
+     ☐ returns int fd
+       ☐ fd = file descriptor
+   ☐ Problem:
+     ☐ Want a procedure call interface
+     ☐ Have only message passing between processes
+     ☐ How to bridge the gap?
+   ☐ Solution: Stub Library
+     ☐ Client stub and server stub
+     ☐ Client stub linked with client process
+     ☐ Server stub linked with server process
+     ☐ Two message types:
+       ☐ Call message
+         ☐ From client to server
+         ☐ Contains arguments
+       ☐ Return message
+         ☐ From server to client
+         ☐ Contains return values
+     ☐ Client stub:
+       ☐ Sends arguments in call message
+       ☐ Revieives return values in return message
+     ☐ Server Stub:
+       ☐ Receives arguments in call message
+       ☐ Invokes procedure
+       ☐ Sends return values in return message
+
+
+
+
+
+ ☐ Websockets
+   ☐ A protocol that allows a client and server process to communicate and exchange data

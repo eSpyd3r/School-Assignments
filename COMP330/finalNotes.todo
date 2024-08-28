@@ -1,0 +1,13 @@
+ Need to learn:
+     ☐ Turing Machines
+       ☐ Turing Machine M decides a language iff it recognizes L over its alphabet and M ALWAYS HALTS. We call such a TM a **decider** and say that L is Turing Decidable
+       ☐ Theorem: There is a k-tape Turing Machine recognizing L iff there is a Turing Machine recognizing L
+
+Notes:
+  ☐ Prove Turing **Recognizable**  
+    ☐ If input has a CFG:
+      ☐ Convert G to an equivalent grammar in Chomsky Normal Form
+  ☐ All PDA's have an equal CFG, and all CFGs have a Chomsky Normal Form
+  ☐ Steps to Convert to Chomsky Normal Form (see ChatGPT)
+  ☐ All regular languages have a DFA
+  ☐ If TM is recognizable AND corecognizable, then it's decideable

@@ -1,0 +1,47 @@
+Lecture 1:
+   ☐ What is a game?
+     ☐ In combinatorial games:
+       ☐ 1. The players
+       ☐ 2. Possible positions (states)
+       ☐ 3. Rules that specify moves (...between states?)
+       ☐ 4. Left/right alternate moves
+         ☐ Real time environment (simultaneous) or Turn based?
+       ☐ 5. Player cannot move, lose
+       ☐ 6. Play always terminates -> when do we win/lose? someone must ALWAYS win/lose, no ties
+       ☐ 7. Complete information
+       ☐ 8. ...and therefore no chance; deterministic
+         ☐ games with dice are not combinatorial
+     ☐ NOT combinatorial games:  
+       ☐ backgammon (dice)
+       ☐ battleship (chance)
+       ☐ RPS (no alternating; simultaneous)
+       ☐ tic-tac-toe (can tie)
+       ☐ chess (can tie, but otherwise is a combinatorial game)
+       ☐ monopoly (chance, not complete information, more than 2 players)
+     ☐ 3 Main properties of games:
+       ☐ 1. System + rules, some kind of limit/boundary
+         ☐ Not necessarily a staic set of rules, but usually is
+         ☐ Not the same as reality
+       ☐ 2. Some sort of goal/objective
+         ☐ progesstion/attainment
+         ☐ need not be fixed
+       ☐ 3. Challenge; attaining goal not trivial
+         ☐ opponents
+         ☐ state configuration
+   ☐ Game Mechanics
+     ☐ Rules constrain behaviors
+     ☐ Mechanics are specific operations a player performs to progress the game
+   ☐ Genres
+     ☐ often tied to technology (3D worlds = FPS, Tile Games = Strategy/turn-based, etc.)
+     ☐ 
+
+Lecture 2:
+ ☐ GameFlow:
+   ☐ Task to be completed
+   ☐ Ability to concentrate
+   ☐ Clear goalsImmediate feedback
+   ☐ Sense of control
+   ☐ See Sweetser gameflow document in lecture files
+   ☐ Main Idea: Enjoyment for players in a game; losing track of time
+     ☐ We observe these priciples to observe how we can achieve "good" GameFlow for player enjoyment
+
